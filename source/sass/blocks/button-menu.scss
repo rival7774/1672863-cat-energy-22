@@ -1,0 +1,35 @@
+.button-menu {
+  width: 24px;
+  height: 2px;
+  background-color: $black;
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 8px;
+    right: 0;
+    height: 2px;
+    width: 24px;
+    background-color: $black;
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    top: -8px;
+    right: 0;
+    height: 2px;
+    width: 24px;
+    background-color: $black;
+  }
+  &--active {
+    background-color: transparent;
+  }
+  &--active::before {
+    top: 0;
+    transform: rotateZ(45deg);
+  }
+  &--active::after {
+    top: 0;
+    transform: rotateZ(-45deg);
+  }
+}

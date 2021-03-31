@@ -1,1 +1,26 @@
-// Начните писать стили здесь
+//global
+@import "global/color.scss";
+@import "global/before\,\ after.scss";
+@import "global/conteiner.scss";
+@import "global/page.scss";
+@import "global/page-body.scss";
+@import "global/mixin.scss";
+@import "global/button.scss";
+@import "global/img.scss";
+@import "global/link.scss";
+@import "global/main-title.scss";
+@import "global/subtitle.scss";
+
+
+//blocks
+@import "blocks/page-header.scss";
+@import "blocks/link-logo.scss";
+@import "blocks/button-menu.scss";
+@import "blocks/main-menu.scss";
+@import "blocks/functional-nutrition.scss";
+
+//elements
+
+// body {
+//   background-color: $bg-green-85;
+// }

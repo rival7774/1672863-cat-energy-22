@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="normalize.min.css">
   <link rel="stylesheet" href="css/style.css">
   <title>Кэт энерджи</title>
@@ -13,9 +14,9 @@
 
 <body class="page-body">
   <header class="page-header">
-    <div class="conteiner">
-      <a class="link-logo link"><img src="img/logo-mobile.svg" alt="Логотип Кэт Энерджи"></a>
-      <button class="button-menu button" aria-label="Кнопка меню"></button>
+    <div class="page-header__logo-conteiner conteiner">
+      <a class="link-logo link"><img class="logo-img img" src="img/logo-mobile.svg" alt="Логотип Кэт Энерджи"></a>
+      <button class="button-menu button-menu--active button" aria-label="Кнопка меню"></button>
     </div>
 
     <nav class="main-menu">
@@ -29,16 +30,19 @@
 
   <main class="main">
     <section class="functional-nutrition">
-      <div class="functional-nutrition__inner">
-        <h1 class="functional-nutrition__title main-title">Функциональное<br>питание для котов</h1>
-        <p class="functional-nutrition__subtitle subtitle">Занялся собой? Займись котом!</p>
+      <div class="functional-nutrition__inner-bg">
+        <div class="functional-nutrition__inner">
+          <h1 class="functional-nutrition__title main-title">Функциональное<br>питание для котов</h1>
+          <p class="functional-nutrition__subtitle subtitle">Занялся собой? Займись котом!</p>
 
-        <img src="img/header-cat-pro.png" alt="Изображение банки с кормом cat pro energy">
+          <img class="functional-nutrition__img img" src="img/header-cat-pro.png"
+            alt="Изображение банки с кормом cat pro energy">
 
-        <a class="functional-nutrition__link link conteiner" href="form.html">Подобрать программу</a>
+          <a class="functional-nutrition__link link" href="form.html">Подобрать программу</a>
+        </div>
       </div>
 
-      <ul class="functional-nutrition__list list conteiner">
+      <ul class="functional-nutrition__list list">
         <div class="list__conteiner">
           <li class="functional-nutrition__item">
             <h2 class="list__title section-title">Похудение</h2>

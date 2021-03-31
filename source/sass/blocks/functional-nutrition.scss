@@ -1,0 +1,30 @@
+.functional-nutrition {
+  text-align: center;
+  background-image: url(../../img/index-background-cat1.jpg);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: contain;
+}
+
+.functional-nutrition__inner-bg {
+  background-image: linear-gradient(to top, transparent 38%, $bg-green-85 38%);
+}
+
+.functional-nutrition__inner {
+  width: 320px;
+  padding: 20px;
+}
+
+.functional-nutrition__title {
+  color: $white;
+}
+
+.functional-nutrition__subtitle {
+  color: $white;
+  margin: 0;
+  padding: 25px 0 29px;
+}
+
+.functional-nutrition__img {
+  display: block;
+}
