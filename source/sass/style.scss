@@ -10,17 +10,32 @@
 @import "global/link.scss";
 @import "global/main-title.scss";
 @import "global/subtitle.scss";
+@import "global/list.scss";
+@import "global/section-title.scss";
+@import "global/text.scss";
+@import "global/value.scss";
+@import "global/description.scss";
+@import "global/scaling.scss";
+@import "global/page-footer.scss";
+@import "global/page-header.scss";
 
 
 //blocks
-@import "blocks/page-header.scss";
+//index
 @import "blocks/link-logo.scss";
 @import "blocks/button-menu.scss";
 @import "blocks/main-menu.scss";
 @import "blocks/functional-nutrition.scss";
-
-//elements
-
-// body {
-//   background-color: $bg-green-85;
-// }
+@import "blocks/functional-nutrition-list.scss";
+@import "blocks/stages.scss";
+@import "blocks/example.scss";
+@import "blocks/options.scss";
+@import "blocks/options-expenses.scss";
+@import "blocks/body-type.scss";
+@import "blocks/footer-location.scss";
+@import "blocks/footer-info.scss";
+@import "blocks/footer-logo.scss";
+@import "blocks/socials.scss";
+@import "blocks/developer.scss";
+//form
+@import "blocks/developer.scss";

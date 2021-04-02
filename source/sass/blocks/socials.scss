@@ -1,0 +1,29 @@
+.socials {
+  padding: 20px 0;
+}
+
+.socials__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.socials__item {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 0 18px;
+}
+
+// .socials__link {
+
+// }
+
+.socials__icon {
+  // &:not(:last-child) {
+    fill: $bg-logoacademy;
+  // }
+  &--fb {
+    stroke: $bg-logoacademy;
+    fill: transparent;
+  }
+}

@@ -4,4 +4,11 @@
   font-weight: $weight;
   font-family: $family, Arial, sans-serif;
 }
+
+@mixin font-arial($size, $height, $weight: 400) {
+  font-size: $size;
+  line-height: $height;
+  font-weight: $weight;
+  font-family: Arial, Helvetica, sans-serif;
+}
 // @include font();

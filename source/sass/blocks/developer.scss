@@ -1,0 +1,15 @@
+.developer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+
+.developer__text {
+  font-size: 16px;
+}
+
+.developer__icon {
+  fill: $bg-logoacademy;
+}

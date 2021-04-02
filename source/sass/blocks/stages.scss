@@ -1,0 +1,41 @@
+// .stages {
+
+// }
+
+.stages__title {
+  padding-bottom: 38px;
+}
+
+.stages__list {
+  padding-bottom: 22px;
+}
+
+.stages__item {
+  padding-bottom: 20px;
+}
+
+.stages__text {
+  display: flex;
+  &::before {
+    content: "";
+    display: block;
+    min-width: 60px;
+    height: 60px;
+    background-color: $border-green;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-right: 20px;
+  }
+  &--sheet::before {
+    background-image: url(../../img/icon-sheet.svg);
+  }
+  &--water::before {
+    background-image: url(../../img/icon-water.svg);
+  }
+  &--fork::before {
+    background-image: url(../../img/icon-fork.svg);
+  }
+  &--clock::before {
+    background-image: url(../../img/icon-clock.svg);
+  }
+}

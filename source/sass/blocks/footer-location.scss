@@ -1,0 +1,22 @@
+.footer-location {
+  background-color: $white;
+}
+
+.footer-location__inner {
+  display: flex;
+  padding: 27px 19px;
+}
+
+.footer-location__slogan {
+  font-size: 16px;
+  text-transform: uppercase;
+  color: $text-dark;
+}
+
+.footer-location__address {
+  line-height: 20px;
+}
+
+.footer-location__map {
+  width: 100%;
+}
