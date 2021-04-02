@@ -18,7 +18,7 @@
 @import "global/scaling.scss";
 @import "global/page-footer.scss";
 @import "global/page-header.scss";
-
+@import "global/fieldset.scss";
 
 //blocks
 //index
@@ -38,4 +38,5 @@
 @import "blocks/socials.scss";
 @import "blocks/developer.scss";
 //form
-@import "blocks/developer.scss";
+@import "blocks/form-main.scss";
+@import "blocks/form-page-form..scss";
