@@ -1,0 +1,21 @@
+.form-specifications {
+  padding: 37px 19px 27px;
+  border-bottom: 1px solid $border-text-grey;
+}
+
+.form-specifications__item {
+  display: flex;
+  align-items: center;
+  &:not(:last-child) {
+    padding-bottom: 13px;
+  }
+}
+
+.form-specifications__label {
+  padding-right: 13px;
+}
+
+.form-specifications__input {
+  flex-grow: 1;
+}
+

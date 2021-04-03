@@ -1,0 +1,8 @@
+.input {
+  @include font(16px, 18px);
+  text-transform: uppercase;
+  color: $text-dark-grey;
+  padding: 13px 15px 14px;
+  margin: 0;
+  border: 1px solid $border-input-grey;
+}

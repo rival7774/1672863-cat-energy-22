@@ -1,0 +1,45 @@
+.form-host-contacts {
+  padding: 0 20px 24px;
+}
+
+.form-host-contacts__legend {
+  margin-bottom: 35px;
+}
+
+// .form-host-contacts__list {
+
+// }
+
+.form-host-contacts__item {
+  display: flex;
+  align-items: center;
+  &:not(:last-child) {
+    padding-bottom: 14px;
+  }
+}
+
+.form-host-contacts__input-inner {
+  flex-grow: 1;
+  position: relative;
+}
+
+.form-host-contacts__icon {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+  &--email {
+    stroke: $stroke-email;
+  }
+  &--phone {
+    fill: $black;
+  }
+}
+
+.form-host-contacts__label {
+  padding-right: 10px;
+}
+
+.form-host-contacts__input {
+  width: 100%;
+}

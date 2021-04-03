@@ -1,0 +1,51 @@
+.form-program {
+  padding: 28px 20px 25px;
+  border-bottom: 1px solid $border-text-grey;
+  margin-bottom: 26px;
+}
+
+// .form-program__list {
+
+// }
+
+.form-program__item {
+  &:not(:last-child) {
+    padding-bottom: 25px;
+  }
+}
+
+.form-program__input {
+  &:checked ~ .form-program__label::after {
+        display: block;
+    }
+}
+
+.form-program__label {
+  padding-left: 45px;
+  position: relative;
+  cursor: pointer;
+  &::before {
+    content: "";
+    width: 30px;
+    height: 30px;
+    background-color: $white;
+    border: 1px solid $border-control-grey;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+  }
+  &::after {
+    content: "";
+    width: 14px;
+    height: 14px;
+    background-color: $border-green;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 8px;
+    transform: translateY(-50%);
+    display: none;
+  }
+}

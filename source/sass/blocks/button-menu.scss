@@ -1,28 +1,39 @@
 .button-menu {
   width: 24px;
+  height: 20px;
+  position: relative;
+  background-color: $white;
+  margin-top: 4px;
+}
+
+.button-menu__item {
+  width: 24px;
   height: 2px;
   background-color: $black;
+<<<<<<< HEAD
   position: relative;
   &::after {
+=======
+  position: absolute;
+  left: 0;
+  top: 50%;
+  &::after,
+  &::before {
+>>>>>>> c54de88 (Сверста форму кроме блока form-additionally)
     content: "";
     position: absolute;
-    top: 8px;
+    bottom: -8px;
     right: 0;
     height: 2px;
     width: 24px;
     background-color: $black;
   }
   &::before {
-    content: "";
-    position: absolute;
-    top: -8px;
-    right: 0;
-    height: 2px;
-    width: 24px;
-    background-color: $black;
+    bottom: 8px;
   }
   &--active {
     background-color: transparent;
+<<<<<<< HEAD
   }
   &--active::before {
     top: 0;
@@ -31,5 +42,16 @@
   &--active::after {
     top: 0;
     transform: rotateZ(-45deg);
+=======
+    top: 0px;
+  }
+  &--active::before {
+    top: 9px;
+    transform: rotate(45deg);
+  }
+  &--active::after {
+    top: 9px;
+    transform: rotate(-45deg);
+>>>>>>> c54de88 (Сверста форму кроме блока form-additionally)
   }
 }
