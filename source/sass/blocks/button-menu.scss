@@ -3,6 +3,7 @@
   height: 2px;
   background-color: $black;
   position: relative;
+  transform: rotate(45deg);
   &::after {
     content: "";
     position: absolute;
@@ -22,14 +23,14 @@
     background-color: $black;
   }
   &--active {
-    background-color: transparent;
+    // background-color: transparent;
   }
   &--active::before {
     top: 0;
-    transform: rotateZ(45deg);
+    transform: rotate(45deg);
   }
   &--active::after {
     top: 0;
-    transform: rotateZ(-45deg);
+    transform: rotate(-45deg);
   }
 }

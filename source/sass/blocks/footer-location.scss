@@ -4,6 +4,7 @@
 
 .footer-location__inner {
   display: flex;
+  justify-content: space-between;
   padding: 27px 19px;
 }
 
@@ -11,6 +12,7 @@
   font-size: 16px;
   text-transform: uppercase;
   color: $text-dark;
+  margin: 0;
 }
 
 .footer-location__address {

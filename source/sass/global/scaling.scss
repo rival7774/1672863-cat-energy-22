@@ -1,23 +1,16 @@
 .scaling {
-  padding: 0 12px;
-}
-
-.scaling__slider {
+  padding: 3px 6px;
+  margin: 0 12px;
   width: 84px;
   height: 14px;
   border: 1px solid $border-control-grey;
   border-radius: 6px;
   background-color: $white;
-  position: relative;
-  &::before {
-    content: "";
-    position: absolute;
-    left: 6px;
-    top: 50%;
-    background-color: $border-green;
-    width: 40%;
-    height: 6px;
-    border-radius: 6px;
-    transform: translateY(-50%);
-  }
+}
+
+.scaling__slider {
+  background-color: $border-green;
+  height: 6px;
+  border-radius: 6px;
+  width: 40%;
 }
