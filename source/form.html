@@ -16,17 +16,18 @@
 
   <header class="page-header">
     <div class="page-header__logo-conteiner conteiner">
-      <a class="link-logo link"><img class="logo-img img" src="img/logo-mobile.svg" alt="Логотип Кэт Энерджи"></a>
+      <a class="link-logo link" href="index.html"><img class="logo-img img" src="img/logo-mobile.svg"
+          alt="Логотип Кэт Энерджи"></a>
       <button class="button-menu button" aria-label="Кнопка меню"><span
           class="button-menu__item button-menu__item--active"></span></button>
     </div>
 
     <nav class="main-menu conteiner">
-      <a class="main-menu__link main-menu__link--active link">Главная</a>
+      <a class="main-menu__link main-menu__link--active link" href="index.html">Главная</a>
 
-      <a class="main-menu__link link" href="">Каталог продукции</a>
+      <a class="main-menu__link link" href="catalog.html">Каталог продукции</a>
 
-      <a class="main-menu__link link" href="">Подбор программы</a>
+      <a class="main-menu__link link">Подбор программы</a>
     </nav>
   </header>
 
@@ -132,28 +133,41 @@
       <fieldset class="form-additionally fieldset">
         <legend class="form-additionally__legend legend">Дополнительно</legend>
 
-        <input class="form-additionally__input input" type="checkbox" name="sweetener" id="sweetener" checked>
-        <label class="form-additionally__label label" for="sweetener">Сахарозаменитель</label>
+        <ul class="form-additionally__list list">
+          <li class="form-additionally__item">
+            <input class="form-additionally__input input visually-hidden" type="checkbox" name="sweetener"
+              id="sweetener" checked>
+            <label class="form-additionally__label label" for="sweetener">Сахарозаменитель</label>
+          </li>
 
-        <input class="form-additionally__input input" type="checkbox" name="water" id="water">
-        <label class="form-additionally__label label" for="water">Питьевая вода</label>
+          <li class="form-additionally__item">
+            <input class="form-additionally__input input visually-hidden" type="checkbox" name="water" id="water">
+            <label class="form-additionally__label label" for="water">Питьевая вода</label>
+          </li>
 
-        <input class="form-additionally__input input" type="checkbox" name="milk" id="milk">
-        <label class="form-additionally__label label" for="milk">Молоко</label>
+          <li class="form-additionally__item">
+            <input class="form-additionally__input input visually-hidden" type="checkbox" name="milk" id="milk">
+            <label class="form-additionally__label label" for="milk">Молоко</label>
+          </li>
 
-        <input class="form-additionally__input input" type="checkbox" name="vitamins" id="vitamins">
-        <label class="form-additionally__label label" for="vitamins">Витамины</label>
+          <li class="form-additionally__item">
+            <input class="form-additionally__input input visually-hidden" type="checkbox" name="vitamins" id="vitamins">
+            <label class="form-additionally__label label" for="vitamins">Витамины</label>
+          </li>
+        </ul>
       </fieldset>
 
-      <button class="form-page-form__button button" type="submit">отправить заявку</button>
+      <div class="form-page-form__inner-button conteiner">
+        <button class="form-page-form__button button link" type="submit">отправить заявку</button>
 
-      <p class="form-page-form__clarification"><sup>*</sup> &#8212; Обязательные поля</p>
+        <p class="form-page-form__clarification"><sup>*</sup> &#8212; Обязательные поля</p>
+      </div>
     </form>
   </main>
 
   <footer class="page-footer">
     <section class="footer-location">
-      <div class="footer-location__inner">
+      <div class="footer-location__inner footer-location__inner--form">
         <p class="footer-location__slogan">Приглашаем<br>к&nbsp;сотрудничеству<br>дилеров!</p>
         <P class="footer-location__address text">ул. Большая<br>Конюшенная, д.&nbsp;19/8<br>Санкт-Петербург</P>
       </div>
@@ -164,7 +178,7 @@
     </section>
 
     <section class="footer-info conteiner">
-      <div class="footer-info__item footer-logo">
+      <a class="footer-info__item footer-logo" href="index.html">
         <svg class="footer-logo__icon" width="128" height="24" viewBox="0 0 128 24" fill="none"
           xmlns="http://www.w3.org/2000/svg">
           <g clip-path="url(#clip0)">
@@ -201,7 +215,7 @@
             </clipPath>
           </defs>
         </svg>
-      </div>
+      </a>
 
       <div class="footer-info__item socials">
         <ul class="socials__list list">

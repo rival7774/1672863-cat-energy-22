@@ -1,28 +1,27 @@
 //global
-@import "global/color.scss";
-@import "global/before\,\ after.scss";
-@import "global/conteiner.scss";
-@import "global/page.scss";
-@import "global/page-body.scss";
+@import "global/variables.scss";
+@import "global/global.scss";
 @import "global/mixin.scss";
-@import "global/button.scss";
-@import "global/img.scss";
-@import "global/link.scss";
-@import "global/main-title.scss";
-@import "global/subtitle.scss";
-@import "global/list.scss";
-@import "global/section-title.scss";
-@import "global/text.scss";
-@import "global/value.scss";
-@import "global/description.scss";
-@import "global/scaling.scss";
-@import "global/page-footer.scss";
-@import "global/page-header.scss";
-@import "global/fieldset.scss";
-
 //blocks
 //index
+@import "blocks/conteiner.scss";
 @import "blocks/visually-hidden.scss";
+@import "blocks/page.scss";
+@import "blocks/page-body.scss";
+@import "blocks/button.scss";
+@import "blocks/img.scss";
+@import "blocks/link.scss";
+@import "blocks/main-title.scss";
+@import "blocks/subtitle.scss";
+@import "blocks/list.scss";
+@import "blocks/section-title.scss";
+@import "blocks/text.scss";
+@import "blocks/value.scss";
+@import "blocks/description.scss";
+@import "blocks/scaling.scss";
+@import "blocks/page-footer.scss";
+@import "blocks/page-header.scss";
+@import "blocks/fieldset.scss";
 @import "blocks/link-logo.scss";
 @import "blocks/button-menu.scss";
 @import "blocks/main-menu.scss";
@@ -49,3 +48,6 @@
 @import "blocks/form-host-contacts.scss";
 @import "blocks/legend.scss";
 @import "blocks/textarea.scss";
+@import "blocks/form-additionally.scss";
+//catalog
+

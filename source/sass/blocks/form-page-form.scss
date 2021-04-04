@@ -1,10 +1,16 @@
 .form-page-form {
 
 }
-.form-page-form__button {
 
+.form-page-form__inner-button {
+  text-align: center;
+}
+
+.form-page-form__button {
+  width: 100%;
 }
 
 .form-page-form__clarification {
-
+  @include font-arial(14px, 16px);
+  margin: 31px 0;
 }

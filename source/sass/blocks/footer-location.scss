@@ -1,16 +1,22 @@
 .footer-location {
-  background-color: $white;
+  background-color: $bg-blocks-grey;
 }
 
 .footer-location__inner {
   display: flex;
+  justify-content: space-between;
   padding: 27px 19px;
+  background-color: $white;
+  &--form {
+    background-color: $bg-blocks-grey;
+  }
 }
 
 .footer-location__slogan {
   font-size: 16px;
   text-transform: uppercase;
   color: $text-dark;
+  margin: 0;
 }
 
 .footer-location__address {
