@@ -4,6 +4,16 @@
 
 .form-comment__legend {
   margin: 0 0 38px;
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 20px;
+    right: -180px;
+    height: 2px;
+    width: 158px;
+    background-color: $border-green;
+  }
 }
 
 .form-comment__textarea {

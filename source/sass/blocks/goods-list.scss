@@ -1,0 +1,42 @@
+// .goods-list {
+
+// }
+
+.goods-list__item {
+  border-top: 1px solid $border-control-grey;
+  padding: 13px 0 18px;
+  &:nth-last-child(2) {
+    border-bottom: 1px solid $border-control-grey;
+    margin-bottom: 39px;
+  }
+}
+
+.goods-list__title {
+  line-height: 16px;
+  padding-bottom: 13px;
+  width: 100%;
+}
+
+.goods-list__inner {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 15px;
+}
+
+.goods-list__value {
+  @include font-arial(14px, 14px);
+  color: $text-dark-grey;
+  margin: 0;
+}
+
+.goods-list__button {
+
+}
+
+.goods-list-stock {
+
+}
+
+.goods-list-stock__text {
+
+}

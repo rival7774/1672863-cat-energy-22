@@ -1,0 +1,33 @@
+// .cards {
+
+// }
+
+// .cards__list {
+
+// }
+
+.cards__item {
+  border-top: 1px solid $bg-button-hover-grey;
+  &:not(:last-child) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 19px 20px 25px;
+  }
+  &:last-child {
+    border-bottom: 1px solid $bg-button-hover-grey;
+    padding: 41px 20px 25px;
+  }
+}
+
+.cards__inner {
+  padding-bottom: 22px;
+}
+
+.cards__characteristics {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cards__button {
+  grid-column: 1/-1;
+}
