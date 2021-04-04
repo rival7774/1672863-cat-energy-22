@@ -12,4 +12,18 @@
   &:last-child {
     border-bottom: 1px solid $border-menu-grey;
   }
+  &:hover {
+    opacity: 0.6;
+  }
+  &:active {
+    opacity: 0.3;
+  }
+  &--active {
+    @media (min-width: $tablet) {
+      border-bottom: 2px solid $border-green;
+    }
+    @media (min-width: $desktop){
+      border-bottom: 2px solid $white;
+    }
+  }
 }
