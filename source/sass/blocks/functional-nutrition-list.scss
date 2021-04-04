@@ -52,11 +52,14 @@
   &::before {
     content: "";
     display: block;
-    width: 17px;
+    width: 18px;
     height: 2px;
     background-color: $black;
     order: 1;
     margin-left: 17px;
+  }
+  &:hover::before {
+    width: 26px;
   }
   &::after {
     content: "";
