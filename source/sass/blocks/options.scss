@@ -1,0 +1,38 @@
+.options__wrapper {
+  display: grid;
+  grid-template-columns: 124px 124px;
+  grid-column-gap: 31px;
+  grid-row-gap: 35px;
+  padding-bottom: 42px;
+}
+
+.options {
+  position: relative;
+}
+
+.options__value {
+  border: 1px solid $border-control-grey;
+  padding: 14px 21px 18px;
+  border-radius: 3px;
+  @include font(24px, 24px);
+  width: 124px;
+  text-align: center;
+}
+
+.options__description {
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  @include font-arial(12px, 12px);
+  text-align: center;
+  text-transform: lowercase;
+  width: 70px;
+  background-color: $bg-section-grey;
+}
+
+.options__options-expenses {
+  grid-column: 1/-1;
+  display: flex;
+  justify-content: center;
+}

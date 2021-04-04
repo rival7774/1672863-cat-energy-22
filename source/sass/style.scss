@@ -1,1 +1,42 @@
-// Начните писать стили здесь
+//global
+@import "global/variables.scss";
+@import "global/before\,\ after.scss";
+@import "global/conteiner.scss";
+@import "global/page.scss";
+@import "global/page-body.scss";
+@import "global/mixin.scss";
+@import "global/button.scss";
+@import "global/img.scss";
+@import "global/link.scss";
+@import "global/main-title.scss";
+@import "global/subtitle.scss";
+@import "global/list.scss";
+@import "global/section-title.scss";
+@import "global/text.scss";
+@import "global/value.scss";
+@import "global/description.scss";
+@import "global/scaling.scss";
+@import "global/page-footer.scss";
+@import "global/page-header.scss";
+@import "global/fieldset.scss";
+
+//blocks
+//index
+@import "blocks/link-logo.scss";
+@import "blocks/button-menu.scss";
+@import "blocks/main-menu.scss";
+@import "blocks/functional-nutrition.scss";
+@import "blocks/functional-nutrition-list.scss";
+@import "blocks/stages.scss";
+@import "blocks/example.scss";
+@import "blocks/options.scss";
+@import "blocks/options-expenses.scss";
+@import "blocks/body-type.scss";
+@import "blocks/footer-location.scss";
+@import "blocks/footer-info.scss";
+@import "blocks/footer-logo.scss";
+@import "blocks/socials.scss";
+@import "blocks/developer.scss";
+//form
+@import "blocks/form-main.scss";
+@import "blocks/form-page-form..scss";

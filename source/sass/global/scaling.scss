@@ -1,0 +1,16 @@
+.scaling {
+  padding: 3px 6px;
+  margin: 0 12px;
+  width: 84px;
+  height: 14px;
+  border: 1px solid $border-control-grey;
+  border-radius: 6px;
+  background-color: $white;
+}
+
+.scaling__slider {
+  background-color: $border-green;
+  height: 6px;
+  border-radius: 6px;
+  width: 40%;
+}

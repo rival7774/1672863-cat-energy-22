@@ -1,0 +1,10 @@
+.body-type {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.body-type__button {
+  text-transform: uppercase;
+  @include font(16px, 20px);
+}

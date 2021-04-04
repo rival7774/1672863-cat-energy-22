@@ -1,0 +1,12 @@
+.main-menu {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-menu__link {
+  background-color: $white;
+  color: $black;
+  border-top: 1px solid $border-menu-grey;
+  @include font(20px, 20px, 500);
+  padding: 22px 24px;
+}
