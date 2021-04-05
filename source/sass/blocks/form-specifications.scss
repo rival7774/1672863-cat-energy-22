@@ -17,5 +17,15 @@
 
 .form-specifications__input {
   flex-grow: 1;
+  border: 1px solid $border-input-grey;
+  &:hover {
+    border: 1px solid $border-control-grey;
+  }
+  &:focus {
+    border: 2px solid $text-dark-grey;
+  }
+  &:invalid:required {
+    border: 2px solid $input-error;
+  }
 }
 

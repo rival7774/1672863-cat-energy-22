@@ -4,16 +4,6 @@
 
 .form-additionally__legend {
   margin-bottom: 34px;
-  position: relative;
-  &::after {
-    content: "";
-    position: absolute;
-    top: 17px;
-    right: -160px;
-    height: 2px;
-    width: 136px;
-    background-color: $border-green;
-  }
 }
 
 // .form-additionally__list {

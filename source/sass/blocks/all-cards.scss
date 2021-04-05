@@ -35,4 +35,10 @@
 .all-cards__button {
   background-color: $bg-blocks-grey;
   color: $text-dark-grey;
+  &:hover {
+    background-color: $bg-button-hover-grey;
+  }
+  &:active {
+    color: $text-dark-grey-30;
+  }
 }

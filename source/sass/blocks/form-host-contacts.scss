@@ -52,4 +52,31 @@
 
 .form-host-contacts__input {
   width: 100%;
+  border: 1px solid $border-input-grey;
+  &:hover {
+    border: 1px solid $border-control-grey;
+  }
+  &:focus {
+    border: 2px solid $text-dark-grey;
+  }
+  &:invalid:required {
+    border: 2px solid $input-error;
+  }
 }
+
+.form-host-contacts__input:focus ~ .form-host-contacts__icon--email {
+  stroke: $border-green;
+}
+
+.form-host-contacts__input:focus ~ .form-host-contacts__icon--phone {
+  fill: $border-green;
+}
+
+.form-host-contacts__input:invalid:required ~ .form-host-contacts__icon--email {
+  stroke: $input-error;
+}
+
+.form-host-contacts__input:invalid:required ~ .form-host-contacts__icon--phone {
+  fill: $input-error;
+}
+

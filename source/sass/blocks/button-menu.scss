@@ -6,6 +6,10 @@
   margin-top: 4px;
 }
 
+.main-menu--no-js .button-menu {
+  display: none;
+}
+
 .button-menu__item {
   width: 24px;
   height: 2px;
