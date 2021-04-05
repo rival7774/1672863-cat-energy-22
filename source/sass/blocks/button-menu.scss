@@ -34,11 +34,11 @@
     background-color: transparent;
   }
   &--active::before {
-    top: 9px;
+    top: 0;
     transform: rotate(45deg);
   }
   &--active::after {
-    top: 9px;
+    top: 0;
     transform: rotate(-45deg);
   }
 }
