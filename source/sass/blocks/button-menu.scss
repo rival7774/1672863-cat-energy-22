@@ -1,36 +1,44 @@
 .button-menu {
   width: 24px;
+  height: 20px;
+  position: relative;
+  background-color: $white;
+  margin-top: 4px;
+}
+
+.button-menu__item {
+  width: 24px;
   height: 2px;
   background-color: $black;
-  position: relative;
-  transform: rotate(45deg);
-  &::after {
-    content: "";
-    position: absolute;
-    top: 8px;
-    right: 0;
-    height: 2px;
-    width: 24px;
-    background-color: $black;
-  }
+  position: absolute;
+  left: 0;
+  top: 50%;
+  &::after,
   &::before {
     content: "";
     position: absolute;
-    top: -8px;
+    bottom: -8px;
     right: 0;
     height: 2px;
     width: 24px;
     background-color: $black;
   }
+  &::after {
+    bottom: -8px;
+  }
+  &::before {
+    bottom: 8px;
+  }
   &--active {
-    // background-color: transparent;
+    top: 0;
+    background-color: transparent;
   }
   &--active::before {
-    top: 0;
+    top: 9px;
     transform: rotate(45deg);
   }
   &--active::after {
-    top: 0;
-    transform: rotate(-45deg);
+    top: 9px;
+    transform: rotate(45deg);
   }
 }

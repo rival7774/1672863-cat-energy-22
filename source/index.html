@@ -16,15 +16,16 @@
   <header class="page-header">
     <div class="page-header__logo-conteiner conteiner">
       <a class="link-logo link"><img class="logo-img img" src="img/logo-mobile.svg" alt="Логотип Кэт Энерджи"></a>
-      <button class="button-menu button-menu--active button" aria-label="Кнопка меню"></button>
+      <button class="button-menu button" aria-label="Кнопка меню"><span
+          class="button-menu__item button-menu__item--active"></span></button>
     </div>
 
     <nav class="main-menu conteiner">
       <a class="main-menu__link main-menu__link--active link">Главная</a>
 
-      <a class="main-menu__link link" href="">Каталог продукции</a>
+      <a class="main-menu__link link" href="catalog.html">Каталог продукции</a>
 
-      <a class="main-menu__link link" href="">Подбор программы</a>
+      <a class="main-menu__link link" href="form.html">Подбор программы</a>
     </nav>
   </header>
 
@@ -141,7 +142,8 @@
   <footer class="page-footer">
     <section class="footer-location">
       <div class="footer-location__inner">
-        <p class="footer-location__slogan">приглашаем<br>к&nbsp;сотрудничеству<br>дилеров!</p>
+        <p class="footer-location__slogan">Приглашаем<br>к&nbsp;сотрудничеству<br>дилеров!</p>
+
         <P class="footer-location__address text">ул. Большая<br>Конюшенная, д.&nbsp;19/8<br>Санкт-Петербург</P>
       </div>
 
@@ -151,7 +153,7 @@
     </section>
 
     <section class="footer-info conteiner">
-      <div class="footer-info__item footer-logo">
+      <a class="footer-info__item footer-logo">
         <svg class="footer-logo__icon" width="128" height="24" viewBox="0 0 128 24" fill="none"
           xmlns="http://www.w3.org/2000/svg">
           <g clip-path="url(#clip0)">
@@ -188,7 +190,7 @@
             </clipPath>
           </defs>
         </svg>
-      </div>
+      </a>
 
       <div class="footer-info__item socials">
         <ul class="socials__list list">
