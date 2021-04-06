@@ -2,8 +2,6 @@
   display: flex;
   flex-direction: column;
   position: relative;
-  width: 320px;
-  margin: auto;
 }
 
 
@@ -13,8 +11,9 @@
   left: 0;
   background-image: url(../img/index-background-cat-1.jpg);
   background-repeat: no-repeat;
-  background-size: contain;
-  width: 320px;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
   height: 302px;
   z-index: 0;
 }
@@ -27,8 +26,7 @@
 }
 
 .functional-nutrition__inner {
-  width: 320px;
-  padding: 20px;
+  padding: 27px 20px 22px;
   position: relative;
   z-index: 1;
   text-align: center;
@@ -44,7 +42,7 @@
 }
 
 .functional-nutrition__img {
-  display: block;
+  margin: auto;
 }
 
 

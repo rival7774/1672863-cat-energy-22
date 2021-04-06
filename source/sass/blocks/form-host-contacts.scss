@@ -1,24 +1,14 @@
 .form-host-contacts {
-  padding: 0 20px 24px;
+  padding: 0 0 24px 20px;
 }
 
 .form-host-contacts__legend {
   margin-bottom: 35px;
-  position: relative;
-  &::after {
-    content: "";
-    position: absolute;
-    top: 20px;
-    right: -19px;
-    height: 2px;
-    width: 99px;
-    background-color: $border-green;
-  }
 }
 
-// .form-host-contacts__list {
-
-// }
+.form-host-contacts__list {
+  padding-right: 20px;
+}
 
 .form-host-contacts__item {
   display: flex;

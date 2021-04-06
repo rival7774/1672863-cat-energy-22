@@ -1,7 +1,5 @@
 .example {
   background-color: $bg-section-grey;
-  width: 320px;
-  margin: auto;
   padding-bottom: 30px;
 }
 
@@ -17,6 +15,6 @@
   padding-bottom: 25px;
 }
 
-// .example__img {
-
-// }
+.example__img {
+  margin: auto;
+}

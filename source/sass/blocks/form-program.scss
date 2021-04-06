@@ -16,8 +16,12 @@
 
 .form-program__input {
   &:checked ~ .form-program__label::after {
-        display: block;
+      display: block;
     }
+  &:disabled ~ .form-program__label{
+    opacity: 0.3;
+    pointer-events: none;
+  }
 }
 
 .form-program__label {
@@ -47,5 +51,8 @@
     left: 8px;
     transform: translateY(-50%);
     display: none;
+  }
+  &:hover::before {
+    border: 1px solid $radio-hover-border-grey;
   }
 }

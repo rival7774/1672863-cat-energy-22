@@ -4,6 +4,9 @@
   position: relative;
   background-color: $white;
   margin-top: 4px;
+  @media (min-width: $tablet) {
+    display: none;
+  }
 }
 
 .main-menu--no-js .button-menu {

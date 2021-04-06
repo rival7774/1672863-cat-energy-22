@@ -1,14 +1,14 @@
 .form-additionally {
-  padding: 0 20px 34px;
+  padding: 0 0 34px 20px;
 }
 
 .form-additionally__legend {
   margin-bottom: 34px;
 }
 
-// .form-additionally__list {
-
-// }
+.form-additionally__list {
+  padding-right: 20px;
+}
 
 .form-additionally__item {
   &:not(:last-child) {
@@ -17,12 +17,15 @@
 }
 
 .form-additionally__input {
-  &:checked {
-    ~ .form-additionally__label::after {
-      display: block;
-    }
+  &:checked ~ .form-additionally__label::after {
+    display: block;
+  }
+  &:disabled ~.form-additionally__label {
+    opacity: 0.3;
+    pointer-events: none;
   }
 }
+
 
 .form-additionally__label {
   padding-left: 46px;
@@ -49,5 +52,8 @@
     border-bottom: 2px solid $border-green;
     border-left: 2px solid $border-green;
     display: none;
+  }
+  &:hover::before {
+    border: 1px solid $radio-hover-border-grey;
   }
 }

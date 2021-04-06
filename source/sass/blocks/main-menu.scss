@@ -4,6 +4,10 @@
   &--active {
     display: flex;
   }
+  @media (min-width: $tablet) {
+    display: flex;
+    flex-direction: row;
+  }
 }
 
 .main-menu--no-js .main-menu {
@@ -16,8 +20,10 @@
   border-top: 1px solid $border-menu-grey;
   @include font(20px, 20px, 500);
   padding: 22px 24px;
-  &:last-child {
-    border-bottom: 1px solid $border-menu-grey;
+  @media (max-width: $only-mobile) {
+    &:last-child {
+      border-bottom: 1px solid $border-menu-grey;
+    }
   }
   &:hover {
     opacity: 0.6;
@@ -28,9 +34,6 @@
   &--active {
     @media (min-width: $tablet) {
       border-bottom: 2px solid $border-green;
-    }
-    @media (min-width: $desktop){
-      border-bottom: 2px solid $white;
     }
   }
 }
