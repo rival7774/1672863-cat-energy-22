@@ -43,6 +43,6 @@
   }
   &--active::after {
     top: 9px;
-    transform: rotate(-45deg);
+    transform: rotate(45deg);
   }
 }
