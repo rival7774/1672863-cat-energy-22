@@ -21,8 +21,21 @@
 
 .socials__icon {
   fill: $bg-logoacademy;
+  &:hover {
+    fill: $border-green;
+  }
+  &:active {
+    opacity: 0.3;
+  }
   &--fb {
     stroke: $bg-logoacademy;
     fill: transparent;
+    &:hover {
+      stroke: $border-green;
+      fill: transparent;
+    }
+    &:active {
+      opacity: 0.3;
+    }
   }
 }

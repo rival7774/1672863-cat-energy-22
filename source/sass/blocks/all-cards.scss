@@ -1,0 +1,44 @@
+// .all-cards {
+
+// }
+
+.all-cards__title {
+  width: 100%;
+  padding: 37px 0 8px;
+  text-align: center;
+  position: relative;
+  &::after,
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    background-color: $bg-light-grey;
+  }
+  &::before {
+    transform: translate(-50%, -50%);
+    width: 30px;
+    height: 2px;
+  }
+  &::after {
+    transform: translateY(-50%);
+    width: 2px;
+    height: 30px;
+  }
+}
+
+.all-cards__text {
+  padding: 0 0 21px;
+  text-align: center;
+}
+
+.all-cards__button {
+  background-color: $bg-blocks-grey;
+  color: $text-dark-grey;
+  &:hover {
+    background-color: $bg-button-hover-grey;
+  }
+  &:active {
+    color: $text-dark-grey-30;
+  }
+}

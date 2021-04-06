@@ -1,6 +1,13 @@
 .main-menu {
-  display: flex;
+  display: none;
   flex-direction: column;
+  &--active {
+    display: flex;
+  }
+}
+
+.main-menu--no-js .main-menu {
+  display: flex;
 }
 
 .main-menu__link {
@@ -9,4 +16,21 @@
   border-top: 1px solid $border-menu-grey;
   @include font(20px, 20px, 500);
   padding: 22px 24px;
+  &:last-child {
+    border-bottom: 1px solid $border-menu-grey;
+  }
+  &:hover {
+    opacity: 0.6;
+  }
+  &:active {
+    opacity: 0.3;
+  }
+  &--active {
+    @media (min-width: $tablet) {
+      border-bottom: 2px solid $border-green;
+    }
+    @media (min-width: $desktop){
+      border-bottom: 2px solid $white;
+    }
+  }
 }

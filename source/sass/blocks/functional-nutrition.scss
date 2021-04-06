@@ -1,18 +1,11 @@
 .functional-nutrition {
   display: flex;
   flex-direction: column;
-  // background-image: url(../../img/index-background-cat1.jpg);
-  // background-repeat: no-repeat;
-  // background-position: top;
-  // background-size: contain;
   position: relative;
   width: 320px;
   margin: auto;
 }
 
-// .functional-nutrition__inner-bg {
-//   background-image: linear-gradient(to top, transparent 38%, $bg-green-85 38%);
-// }
 
 .functional-nutrition__bg-img {
   position: absolute;
@@ -25,6 +18,7 @@
   height: 302px;
   z-index: 0;
 }
+
 .functional-nutrition__bg {
   background-color: $bg-green-85;
   width: 100%;
