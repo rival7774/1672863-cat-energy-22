@@ -5,6 +5,11 @@
     padding-bottom: 47px;
     margin-bottom: 43px;
   }
+  @media (min-width: $desktop) {
+    border: none;
+    padding-bottom: 11px;
+    margin-bottom: 0;
+  }
 }
 
 .stages__title {
@@ -17,10 +22,13 @@
 .stages__list {
   @media (min-width: $tablet) {
     display: grid;
-    grid-template-columns: 230px 230px;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 230px));
     grid-row-gap: 37px;
     grid-column-gap: 153px;
     counter-reset: number;
+  }
+  @media (min-width: $desktop) {
+    grid-column-gap: 94px;
   }
 }
 
@@ -32,6 +40,7 @@
   }
   @media (min-width: $tablet) {
     padding-bottom: 57px;
+    // width: 230px;
     position: relative;
     &::before {
       content: "" counter(number);
