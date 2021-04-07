@@ -1,6 +1,12 @@
 .example {
   background-color: $bg-section-grey;
   padding-bottom: 30px;
+  @media (min-width: $tablet) {
+    // box-shadow: 0px -462px 0px -1px #eaeaea inset;
+    background-image: linear-gradient(to bottom, transparent 60%, $bg-section-grey 40%);
+    background-color: $white;
+    padding-bottom: 64px;
+  }
 }
 
 // .example__conteiner {
@@ -9,10 +15,16 @@
 
 .example__title {
   padding: 27px 0 33px 0;
+  @media (min-width: $tablet) {
+    padding: 0 0 63px;
+  }
 }
 
 .example__text {
   padding-bottom: 25px;
+  @media (min-width: $tablet) {
+    padding-bottom: 54px;
+  }
 }
 
 .example__img {

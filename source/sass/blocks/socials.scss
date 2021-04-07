@@ -1,5 +1,8 @@
 .socials {
   padding: 20px 0;
+  @media (min-width: $tablet) {
+    padding: 0;
+  }
 }
 
 .socials__list {
@@ -27,7 +30,7 @@
   &:active {
     opacity: 0.3;
   }
-  &--fb {
+  &--fecebook {
     stroke: $bg-logoacademy;
     fill: transparent;
     &:hover {
@@ -36,6 +39,20 @@
     }
     &:active {
       opacity: 0.3;
+    }
+  }
+  @media (min-width: $tablet) {
+    &--vkontakte {
+      width: 30px;
+      height: 22px;
+    }
+    &--instagram {
+      width: 23px;
+      height: 23px;
+    }
+    &--fecebook {
+      width: 28px;
+      height: 33px;
     }
   }
 }

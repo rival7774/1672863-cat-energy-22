@@ -14,4 +14,7 @@
   &:active {
     border: none;
   }
+  @media (min-width: $tablet) {
+    @include font-size(20px, 30px);
+  }
 }

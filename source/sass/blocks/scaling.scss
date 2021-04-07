@@ -1,11 +1,21 @@
 .scaling {
-  padding: 3px 6px;
-  margin: 0 12px;
-  width: 84px;
-  height: 14px;
-  border: 1px solid $border-control-grey;
-  border-radius: 6px;
-  background-color: $white;
+  @media (max-width: $only-mobile) {
+    padding: 3px 6px;
+    margin: 0 12px;
+    width: 84px;
+    height: 14px;
+    border: 1px solid $border-control-grey;
+    border-radius: 6px;
+    background-color: $white;
+  }
+  @media (min-width: $tablet) {
+    width: 428px;
+    height: 6px;
+    background-color: $border-control-grey;
+    margin: 0 14px;
+    position: relative;
+    cursor: pointer;
+  }
 }
 
 .scaling__slider {
@@ -13,4 +23,34 @@
   height: 6px;
   border-radius: 6px;
   width: 40%;
+  @media (min-width: $tablet) {
+    position: absolute;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    border: 1px solid $border-control-grey;
+    background-color: $white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    filter: drop-shadow(0px 1px 3px rgba(0, 0, 0, 0.16));
+    &:hover {
+      filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.19));
+    }
+    &:active {
+      filter: drop-shadow(0px 3px 5px rgba(0, 0, 0, 0.2));
+      border-color: $border-green;
+    }
+    &::before {
+      content: "";
+      width: 8px;
+      height: 8px;
+      background-color: $border-green;
+      border-radius: 50%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
 }

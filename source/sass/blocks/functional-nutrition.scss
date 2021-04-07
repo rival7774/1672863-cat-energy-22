@@ -16,6 +16,9 @@
   width: 100%;
   height: 302px;
   z-index: 0;
+  @media (min-width: $tablet) {
+    display: none;
+  }
 }
 
 .functional-nutrition__bg {
@@ -30,19 +33,50 @@
   position: relative;
   z-index: 1;
   text-align: center;
+  @media (min-width: $tablet) {
+    padding: 62px 30px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: start;
+  }
 }
 
 .functional-nutrition__title {
   color: $white;
+  @media (min-width: $tablet) {
+    color: $black;
+    order: 1;
+    padding-left: 83px;
+  }
 }
 
 .functional-nutrition__subtitle {
   color: $white;
   padding: 25px 0 29px;
+  @media (min-width: $tablet) {
+    color: $black;
+    padding: 41px 0 49px 83px;
+    order: 2;
+  }
 }
 
 .functional-nutrition__img {
   margin: auto;
+  width: 709px;
+  height: 609px;
+  @media (min-width: $tablet) {
+    order: 4;
+    margin: -77px 0 0;
+    z-index: -1;
+  }
 }
 
-
+.functional-nutrition__link {
+  @media (min-width: $tablet) {
+    display: inline-flex;
+    padding: 14px 26px;
+    order: 3;
+    margin-left: 83px;
+  }
+}

@@ -17,10 +17,13 @@
 .main-menu__link {
   background-color: $white;
   color: $black;
-  border-top: 1px solid $border-menu-grey;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
   @include font(20px, 20px, 500);
-  padding: 22px 24px;
   @media (max-width: $only-mobile) {
+    padding: 22px 24px;
+    border-top: 1px solid $border-menu-grey;
     &:last-child {
       border-bottom: 1px solid $border-menu-grey;
     }
@@ -35,5 +38,10 @@
     @media (min-width: $tablet) {
       border-bottom: 2px solid $border-green;
     }
+  }
+  @media (min-width: $tablet) {
+    padding: 10px 0;
+    margin-left: 35px;
+    @include font-size(18px, 24px);
   }
 }
