@@ -2,21 +2,33 @@
   background-color: $bg-section-grey;
   padding-bottom: 30px;
   @media (min-width: $tablet) {
-    // box-shadow: 0px -462px 0px -1px #eaeaea inset;
-    background-image: linear-gradient(to bottom, transparent 60%, $bg-section-grey 40%);
+    // box-shadow: 0px -462px 0px -1px #eaeaea inset;  альтернатива
+    background-image: linear-gradient(to bottom, transparent 30%, $bg-section-grey 30%);
     background-color: $white;
     padding-bottom: 64px;
   }
+  @media (min-width: $desktop) {
+    padding-top: 58px;
+  }
 }
 
-// .example__conteiner {
+.example__conteiner {
+  display: flex;
+}
 
-// }
+.example__inner-content {
+  @media (min-width: $desktop) {
+    max-width: 436px;
+  }
+}
 
 .example__title {
   padding: 27px 0 33px 0;
   @media (min-width: $tablet) {
     padding: 0 0 63px;
+  }
+  @media (min-width: $desktop) {
+    padding: 58px 0 146px;
   }
 }
 
@@ -25,8 +37,16 @@
   @media (min-width: $tablet) {
     padding-bottom: 54px;
   }
+  @media (min-width: $desktop) {
+    grid-column: 1/2;
+    padding-bottom: 69px;
+  }
 }
 
 .example__img {
   margin: auto;
 }
+
+// .example__inner-slider {
+
+// }
