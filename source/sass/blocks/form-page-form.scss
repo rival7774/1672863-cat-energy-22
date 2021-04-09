@@ -4,12 +4,14 @@
 
 .form-page-form__inner-button {
   text-align: center;
+
   @media (min-width: $tablet) {
     padding: 0 70px 72px;
     display: flex;
     align-items: center;
     justify-content: flex-start;
   }
+
   @media (min-width: $desktop) {
     padding: 0 110px 82px;
   }
@@ -17,10 +19,12 @@
 
 .form-page-form__button {
   width: 100%;
+
   @media (min-width: $tablet) {
     margin-right: 61px;
     width: 282px;
   }
+
   @media (min-width: $desktop) {
     margin-right: 81px;
     width: 568px;
@@ -30,6 +34,7 @@
 .form-page-form__clarification {
   @include font-arial(14px, 16px);
   margin: 31px 0;
+  
   @media (min-width: $tablet) {
     margin: 0;
     font-size: 16px;

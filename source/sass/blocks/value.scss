@@ -1,6 +1,7 @@
 .value {
   @include font-arial(12px, 16px);
   margin: 0;
+  
   @media (min-width: $tablet) {
     font-size: 16px;
   }

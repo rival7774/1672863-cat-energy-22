@@ -4,6 +4,7 @@
   position: relative;
   background-color: $white;
   margin-top: 4px;
+
   @media (min-width: $tablet) {
     display: none;
   }
@@ -20,6 +21,7 @@
   position: absolute;
   left: 0;
   top: 50%;
+
   &::after,
   &::before {
     content: "";
@@ -30,20 +32,25 @@
     width: 24px;
     background-color: $black;
   }
+
   &::after {
     bottom: -8px;
   }
+
   &::before {
     bottom: 8px;
   }
+
   &--active {
     top: 0;
     background-color: transparent;
   }
+
   &--active::before {
     top: 9px;
     transform: rotate(45deg);
   }
+
   &--active::after {
     top: 9px;
     transform: rotate(-45deg);

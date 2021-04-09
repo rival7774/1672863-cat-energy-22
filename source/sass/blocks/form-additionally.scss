@@ -1,8 +1,10 @@
 .form-additionally {
   padding: 0 0 34px 20px;
+  
   @media (min-width: $tablet) {
     padding: 0 0 54px 30px;
   }
+
   @media (min-width: $desktop) {
     padding: 0 0 61px 70px;
   }
@@ -10,6 +12,7 @@
 
 .form-additionally__legend {
   margin-bottom: 34px;
+
   @media (min-width: $tablet) {
     margin-bottom: 57px;
   }
@@ -17,6 +20,7 @@
 
 .form-additionally__list {
   padding-right: 20px;
+
   @media (min-width: $tablet) {
     padding: 0 0 0 40px;
     display: grid;
@@ -24,6 +28,7 @@
     grid-column-gap: 123px;
     grid-row-gap: 42px;
   }
+
   @media (min-width: $desktop) {
     padding: 0 0 0 40px;
     grid-template-columns: repeat(auto-fit, 245px);
@@ -35,13 +40,11 @@
   &:not(:last-child) {
     padding-bottom: 25px;
   }
+
   @media (min-width: $tablet) {
     &:not(:last-child) {
       padding-bottom: 0;
     }
-  }
-  @media (min-width: $desktop) {
-
   }
 }
 
@@ -49,7 +52,8 @@
   &:checked ~ .form-additionally__label::after {
     display: block;
   }
-  &:disabled ~.form-additionally__label {
+
+  &:disabled ~ .form-additionally__label {
     opacity: 0.3;
     pointer-events: none;
   }
@@ -60,6 +64,7 @@
   padding-left: 46px;
   position: relative;
   cursor: pointer;
+
   &::before {
     content: "";
     position: absolute;
@@ -70,6 +75,7 @@
     height: 30px;
     border: 1px solid $border-control-grey;
   }
+
   &::after {
     content: "";
     position: absolute;
@@ -82,6 +88,7 @@
     border-left: 2px solid $border-green;
     display: none;
   }
+
   &:hover::before {
     border: 1px solid $radio-hover-border-grey;
   }

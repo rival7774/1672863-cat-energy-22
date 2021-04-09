@@ -4,6 +4,7 @@
   align-items: center;
   justify-content: space-between;
   padding: 20px 0;
+  
   @media (min-width: $tablet) {
     padding: 0;
   }
@@ -12,9 +13,11 @@
 .developer__link {
   @include font-size(16px, 18px);
   text-decoration: none;
+
   &:not(:last-child) {
     margin-right: 22px;
   }
+
   &:active {
     opacity: 0.3;
   }
@@ -22,6 +25,7 @@
 
 .developer__icon {
   fill: $bg-logoacademy;
+
   &:hover {
     fill: $border-green;
   }

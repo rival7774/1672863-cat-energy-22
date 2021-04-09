@@ -1,6 +1,7 @@
 .main-title {
   @include font(36px, 36px);
   margin: 0;
+  
   @media (min-width: $tablet) {
     @include font-size(60px, 60px);
   }
