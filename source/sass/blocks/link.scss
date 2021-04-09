@@ -4,7 +4,7 @@
   color: $white;
   background-color: $border-green;
   display: block;
-  padding: 10px 0 10px;
+  padding: 10px;
   text-align: center;
   @include font(16px, 20px);
   &--actions:hover {

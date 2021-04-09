@@ -1,13 +1,32 @@
 .form-comment {
   padding: 0 0 24px 20px;
+  @media (min-width: $tablet) {
+    padding: 0 0 65px 30px;
+  }
+  @media (min-width: $desktop) {
+    padding: 0 0 67px 70px;
+  }
 }
 
 .form-comment__legend {
   margin: 0 0 38px;
+  @media (min-width: $tablet) {
+    margin: 0 0 76px;
+  }
+}
+
+.form-comment__textarea-indent {
+  margin-right: 20px;
+  @media (min-width: $tablet) {
+    margin: 0 67px 0 40px;
+  }
+  @media (min-width: $desktop) {
+    margin: 0 110px 0 40px;
+  }
 }
 
 .form-comment__textarea {
-  min-width: 280px;
+  width: 100%;
   min-height: 150px;
   padding: 9px 12px 9px 15px;
 }

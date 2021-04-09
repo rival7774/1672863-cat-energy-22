@@ -2,11 +2,23 @@
   padding: 28px 20px 25px;
   border-bottom: 1px solid $border-text-grey;
   margin-bottom: 26px;
+  @media (min-width: $tablet) {
+    border: none;
+    padding: 0 67px 72px 70px;
+    margin: 0;
+  }
+  @media (min-width: $desktop) {
+    padding: 0;
+    flex-basis: 50%;
+  }
 }
 
-// .form-program__list {
-
-// }
+.form-program__list {
+  @media (min-width: $tablet) {
+    border: 1px solid $border-text-grey;;
+    padding: 25px 28px 29px;
+  }
+}
 
 .form-program__item {
   &:not(:last-child) {

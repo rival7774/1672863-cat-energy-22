@@ -3,11 +3,14 @@
   margin: 0 auto;
   padding: 0 20px;
   @media (min-width: $tablet) {
-    // min-width: $tablet;
     padding: 0 30px;
   }
+  &--form-tablet {
+    @media (min-width: $tablet) {
+      padding: 0 70px;
+    }
+  }
   @media (min-width: $desktop) {
-    // min-width: $desktop;
     padding: 0 110px;
   }
 }

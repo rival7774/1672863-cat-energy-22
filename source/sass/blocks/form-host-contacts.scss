@@ -1,13 +1,30 @@
 .form-host-contacts {
   padding: 0 0 24px 20px;
+  @media (min-width: $tablet) {
+    padding: 0 67px 65px 30px;
+  }
+  @media (min-width: $desktop) {
+    padding: 0 110px 69px 70px;
+  }
 }
 
 .form-host-contacts__legend {
   margin-bottom: 35px;
+  @media (min-width: $tablet) {
+    margin-bottom: 76px;
+  }
 }
 
 .form-host-contacts__list {
   padding-right: 20px;
+  @media (min-width: $tablet) {
+    padding-right: 0;
+    padding-left: 40px;
+  }
+  @media (min-width: $desktop) {
+    display: flex;
+    padding-left: 40px;
+  }
 }
 
 .form-host-contacts__item {
@@ -15,6 +32,17 @@
   align-items: center;
   &:not(:last-child) {
     padding-bottom: 14px;
+  }
+  @media (min-width: $tablet) {
+    &:not(:last-child) {
+      padding-bottom: 20px;
+    }
+  }
+  @media (min-width: $desktop) {
+    &:not(:last-child) {
+      padding: 0 78px 0 0;
+    }
+    flex-basis: 50%;
   }
 }
 

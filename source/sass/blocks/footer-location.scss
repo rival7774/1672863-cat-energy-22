@@ -9,7 +9,9 @@
   padding: 28px 20px 26px;
   background-color: $white;
   &--color {
-    background-color: $bg-blocks-grey;
+    @media (max-width: 1439px) {
+      background-color: $bg-blocks-grey;
+    }
   }
   @media (min-width: $tablet) {
     padding: 62px 71px 51px;
