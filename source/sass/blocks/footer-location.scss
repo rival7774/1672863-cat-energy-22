@@ -1,5 +1,6 @@
 .footer-location {
   background-color: $bg-blocks-grey;
+  position: relative;
 }
 
 .footer-location__inner {
@@ -13,6 +14,12 @@
   @media (min-width: $tablet) {
     padding: 62px 71px 51px;
   }
+  @media (min-width: $desktop) {
+    position: absolute;
+    top: 95px;
+    left: 110px;
+    padding: 66px 76px 51px;
+  }
 }
 
 .footer-location__slogan {
@@ -23,16 +30,22 @@
   @media (min-width: $tablet) {
     @include font-size(20px, 21px);
   }
+  @media (min-width: $desktop) {
+    margin-right: 87px;
+  }
 }
 
 .footer-location__address {
   line-height: 20px;
   @media (min-width: $tablet) {
     text-align: end;
-    &--margin {
+    &--span {
       display: block;
       margin-top: 10px;
     }
+  }
+  @media (min-width: $desktop) {
+    text-align: start;
   }
 }
 

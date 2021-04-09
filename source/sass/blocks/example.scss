@@ -14,11 +14,13 @@
 
 .example__conteiner {
   display: flex;
+  align-items: flex-end;
 }
 
 .example__inner-content {
   @media (min-width: $desktop) {
     max-width: 436px;
+    padding-bottom: 8px;
   }
 }
 
