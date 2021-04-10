@@ -69,7 +69,7 @@
     transform: translateY(-50%);
     display: none;
   }
-  
+
   &:hover::before {
     border: 1px solid $radio-hover-border-grey;
   }

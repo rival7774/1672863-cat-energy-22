@@ -2,7 +2,7 @@
   @include font(14px, 14px);
   text-transform: uppercase;
   margin: 0;
-  
+
   @media (min-width: $tablet) {
     @include font-size(20px, 20px);
   }

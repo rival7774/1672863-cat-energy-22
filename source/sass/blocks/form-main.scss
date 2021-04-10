@@ -24,7 +24,7 @@
 
 .form-main__subtitle {
   line-height: 18px;
-  
+
   @media (min-width: $tablet) {
     @include font(20px, 30px);
   }

@@ -34,7 +34,7 @@
 .form-page-form__clarification {
   @include font-arial(14px, 16px);
   margin: 31px 0;
-  
+
   @media (min-width: $tablet) {
     margin: 0;
     font-size: 16px;

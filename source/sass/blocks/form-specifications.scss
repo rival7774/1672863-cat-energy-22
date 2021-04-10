@@ -37,7 +37,7 @@
   &:focus {
     border: 2px solid $text-dark-grey;
   }
-  
+
   &:invalid:required {
     border: 2px solid $input-error;
   }
