@@ -1,6 +1,14 @@
-// .goods-list-stock {
+.goods-list-stock {
+  padding-right: 20px;
 
-// }
+  @media (min-width: $tablet) {
+    padding-right: 30px;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 80px 110px 0 0;
+  }
+}
 
 .goods-list-stock__inner {
   width: 100%;
@@ -8,10 +16,21 @@
   background-image: url(../../img/cat-goods-mobile.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 43px;
+  background-position: center;
+  padding: 58px 61px 43px 58px;
   display: flex;
   align-items: flex-end;
   justify-content: center;
+
+  @media (min-width: $tablet) {
+    min-height: 200px;
+    padding: 58px 124px 60px 78px;
+  }
+
+  @media (min-width: $desktop) {
+    min-height: 100%;
+    padding: 56px 43px 42px 41px;
+  }
 }
 
 .goods-list-stock__text {
@@ -34,5 +53,29 @@
     background-image: url(../../img/icon-gift.svg);
     background-repeat: no-repeat;
     background-size: cover;
+
+    @media (min-width: $tablet) {
+      position: static;
+      display: block;
+      transform: translateX(0);
+    }
+
+    @media (min-width: $desktop) {
+      position: absolute;
+      transform: translateX(-50%);
+    }
+  }
+
+  @media (min-width: $tablet) {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    width: 100%;
+    text-align: start;
+  }
+
+  @media (min-width: $desktop) {
+    padding-top: 128px;
+    text-align: center;
   }
 }

@@ -1,8 +1,16 @@
 .additional-goods {
   padding: 0 0 35px 20px;
+
+  @media (min-width: $tablet) {
+    padding: 0 0 76px 30px;
+  }
+
+  @media (min-width: $desktop) {
+    display: flex;
+    padding: 0 0 86px 70px;
+  }
 }
 
 .additional-goods__legend {
   line-height: 24px;
-  padding-bottom: 36px;
 }

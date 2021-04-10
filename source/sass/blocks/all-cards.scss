@@ -1,12 +1,38 @@
-// .all-cards {
+.all-cards {
+  border-bottom: 1px solid $bg-button-hover-grey;
+  padding: 41px 20px 25px;
 
-// }
+  @media (min-width: $tablet) {
+    padding: 81px 0 0 0;
+  }
+}
+
+.all-cards__inner {
+  @media (min-width: $tablet) {
+    border: 2px solid $bg-blocks-grey;
+    padding: 82px 37px 40px;
+    height: 100%;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 81px 37px 40px;
+  }
+}
 
 .all-cards__title {
   width: 100%;
   padding: 37px 0 8px;
   text-align: center;
   position: relative;
+
+  @media (min-width: $tablet) {
+    margin: 0;
+    padding: 79px 35px 23px;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 79px 10px 23px;
+  }
 
   &::after,
   &::before {
@@ -21,18 +47,30 @@
     transform: translate(-50%, -50%);
     width: 30px;
     height: 2px;
+
+    @media (min-width: $tablet) {
+      width: 60px;
+    }
   }
 
   &::after {
     transform: translateY(-50%);
     width: 2px;
     height: 30px;
+
+    @media (min-width: $tablet) {
+      height: 60px;
+    }
   }
 }
 
 .all-cards__text {
   padding: 0 0 21px;
   text-align: center;
+
+  @media (min-width: $tablet) {
+    padding: 0 0 87px;
+  }
 }
 
 .all-cards__button {
