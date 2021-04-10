@@ -50,7 +50,7 @@
     &::before {
       content: "" counter(number);
       counter-increment: number;
-      color: #F2F2F2;
+      color: $bg-blocks-grey;
       position: absolute;
       top: 126px;
       right: 0;

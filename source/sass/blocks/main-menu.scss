@@ -30,6 +30,7 @@
   text-transform: uppercase;
   text-decoration: none;
   text-align: center;
+
   @include font(20px, 20px, 500);
 
   @media (max-width: $only-mobile) {
@@ -58,6 +59,7 @@
   @media (min-width: $tablet) {
     padding: 10px 0;
     margin-left: 35px;
+
     @include font-size(18px, 24px);
   }
 

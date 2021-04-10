@@ -5,6 +5,8 @@ $white: #ffffff;
 $button-text-active-30: rgba(255, 255, 255, 0.3);
 $black: #000000;
 $shadow-control-16: rgba(0, 0, 0, 0.16);
+$shadow-control-19: rgba(0, 0, 0, 0.19);
+$shadow-control-20: rgba(0, 0, 0, 0.2);
 $was-dorder-hover-40: rgba(0, 0, 0, 0.4);
 $text-dark: #111111;
 $stroke-email: #222222;
@@ -24,10 +26,12 @@ $input-error: #ff8282;
 
 $only-mobile: 767px;
 $tablet: 768px;
+
 @media (min-width: $tablet) {
 
 }
 $desktop: 1440px;
+
 @media (min-width: $desktop) {
 
 }

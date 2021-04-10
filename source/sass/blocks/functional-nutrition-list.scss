@@ -29,11 +29,11 @@
     }
 
     &--slimming {
-    padding: 77px 281px 53px 52px;
+      padding: 77px 281px 53px 52px;
     }
 
     &--weight {
-    padding: 77px 316px 53px 52px;
+      padding: 77px 316px 53px 52px;
     }
   }
 
@@ -67,7 +67,7 @@
   }
 
   &--slimming::before,
-  &--weight::before{
+  &--weight::before {
     content: "";
     display: block;
     background-repeat: no-repeat;
@@ -111,7 +111,6 @@
     &--slimming::before,
     &--weight::before {
       @media (min-width: $tablet) {
-        margin-right: 0;
         position: static;
         margin-right: 62px;
       }
