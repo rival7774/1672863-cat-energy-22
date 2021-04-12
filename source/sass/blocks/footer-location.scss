@@ -47,15 +47,17 @@
 
   @media (min-width: $tablet) {
     text-align: end;
-
-    &--span {
-      display: block;
-      margin-top: 10px;
-    }
   }
 
   @media (min-width: $desktop) {
     text-align: start;
+  }
+}
+
+.footer-location__address-span {
+  @media (min-width: $tablet) {
+    display: block;
+    margin-top: 10px;
   }
 }
 

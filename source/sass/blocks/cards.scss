@@ -4,6 +4,7 @@
 
 .cards__list {
   padding-bottom: 25px;
+  margin: auto;
 
   @media (min-width: $tablet) {
     padding: 0 30px 68px;
@@ -11,6 +12,8 @@
     grid-template-columns: repeat(auto-fit, 324px);
     grid-column-gap: 60px;
     grid-row-gap: 59px;
+    justify-content: center;
+
   }
 
   @media (min-width: $desktop) {
