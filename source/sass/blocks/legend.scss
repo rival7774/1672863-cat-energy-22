@@ -21,6 +21,10 @@
     @include font(36px, 36px);
     padding: 0 40px;
   }
+
+  @media (min-width: $desktop) {
+    margin-left: -10px;
+  }
 }
 
 .form-host-contacts .legend::after {

@@ -15,10 +15,15 @@
 
 .form-specifications__item {
   display: flex;
-  align-items: center;
 
   &:not(:last-child) {
     padding-bottom: 13px;
+  }
+
+  @media (min-width: $tablet) {
+    &:not(:last-child) {
+      padding-bottom: 20px;
+    }
   }
 }
 

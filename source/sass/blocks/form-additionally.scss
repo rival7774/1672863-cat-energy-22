@@ -6,7 +6,9 @@
   }
 
   @media (min-width: $desktop) {
-    padding: 0 110px 61px 70px;
+    padding-bottom: 61px;
+    padding-left: calc(50% - 640px);
+    padding-right: calc(50% - 610px);
   }
 }
 
@@ -33,6 +35,7 @@
     padding: 0 0 0 40px;
     grid-template-columns: repeat(auto-fit, 245px);
     grid-column-gap: 80px;
+    margin-left: -10px;
   }
 }
 

@@ -6,7 +6,9 @@
   }
 
   @media (min-width: $desktop) {
-    padding: 0 110px 69px 70px;
+    padding: 0 0 69px 0;
+    padding-left: calc(50% - 640px);
+    padding-right: calc(50% - 610px);
   }
 }
 
@@ -29,6 +31,7 @@
   @media (min-width: $desktop) {
     display: flex;
     padding-left: 40px;
+    margin-left: -10px;
   }
 }
 

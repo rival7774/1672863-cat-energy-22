@@ -10,7 +10,7 @@
   background-color: $white;
 
   &--color {
-    @media (max-width: 1439px) {
+    @media (max-width: 1279px) {
       background-color: $bg-blocks-grey;
     }
   }
@@ -22,7 +22,7 @@
   @media (min-width: $desktop) {
     position: absolute;
     top: 95px;
-    left: 110px;
+    left: calc(50% - 610px);
     padding: 66px 76px 51px;
   }
 }

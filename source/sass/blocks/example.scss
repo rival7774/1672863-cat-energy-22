@@ -58,6 +58,8 @@
   margin: auto;
 }
 
-// .example__inner-slider {
-
-// }
+.example__inner-slider {
+  @media (min-width: $desktop) {
+    margin-left: 134px;
+  }
+}

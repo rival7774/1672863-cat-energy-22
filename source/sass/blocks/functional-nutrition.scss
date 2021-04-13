@@ -47,6 +47,13 @@
   height: 100%;
 }
 
+.functional-nutrition__wrapper-content {
+  @media (min-width: $desktop) {
+    width: 50%;
+    padding-left: calc(50% - 610px);
+  }
+}
+
 .functional-nutrition__inner-content {
   padding: 27px 20px 22px;
   position: relative;
@@ -61,8 +68,7 @@
   }
 
   @media (min-width: $desktop) {
-    padding: 223px 0 0 190px;
-    width: 50%;
+    padding: 223px 0 0 80px;
   }
 }
 
