@@ -23,63 +23,67 @@
       </div>
 
       <nav class="main-menu main-menu--active">
-        <a class="main-menu__link main-menu__link--active">Главная</a>
+        <a class="main-menu__link" href="index.html">Главная</a>
 
         <a class="main-menu__link" href="catalog.html">Каталог продукции</a>
 
-        <a class="main-menu__link" href="form.html">Подбор программы</a>
+        <a class="main-menu__link main-menu__link--active">Подбор программы</a>
       </nav>
     </div>
   </header>
 
   <main class="form-main">
-    <div class="form-main__wrapper-title conteiner">
+    <div class="form-main__wrapper-title conteiner conteiner--form-tablet">
       <h1 class="form-main__main-title main-title">Подбор программы</h1>
 
       <p class="form-main__subtitle subtitle">Заполните анкету, и мы подберем<br>программу питания для вашего кот</p>
     </div>
 
     <form class="form-page-form" action="https://echo.htmlacademy.ru" method="get">
-      <fieldset class="form-specifications fieldset">
-        <ul class="form-specifications__list list">
-          <li class="form-specifications__item">
-            <label class="form-specifications__label label" for="name">Имя:<sup>*</sup></label>
-            <input class="form-specifications__input input" type="text" name="name" id="name" value="БАРСИК" required>
-          </li>
+      <div class="form-inner-top">
+        <fieldset class="form-specifications fieldset">
+          <ul class="form-specifications__list list">
+            <li class="form-specifications__item">
+              <label class="form-specifications__label label" for="name">Имя:<sup>*</sup></label>
+              <input class="form-specifications__input input" type="text" name="name" id="name" value="БАРСИК" required>
+            </li>
 
-          <li class="form-specifications__item">
-            <label class="form-specifications__label label" for="weight">Вес (кг):<sup>*</sup></label>
-            <input class="form-specifications__input input" type="number" name="weight" id="weight" value="7" required>
-          </li>
+            <li class="form-specifications__item">
+              <label class="form-specifications__label label" for="weight">Вес (кг):<sup>*</sup></label>
+              <input class="form-specifications__input input" type="number" name="weight" id="weight" value="7"
+                required>
+            </li>
 
-          <li class="form-specifications__item">
-            <label class="form-specifications__label label" for="age">Возраст (лет):<sup>*</sup></label>
-            <input class="form-specifications__input input" type="number" name="age" id="age" value="7" required>
-          </li>
-        </ul>
-      </fieldset>
+            <li class="form-specifications__item">
+              <label class="form-specifications__label label" for="age">Возраст (лет):<sup>*</sup></label>
+              <input class="form-specifications__input input" type="number" name="age" id="age" value="7" required>
+            </li>
+          </ul>
+        </fieldset>
 
-      <fieldset class="form-program fieldset">
-        <ul class="form-program__list list">
-          <li class="form-program__item">
-            <input class="form-program__input input visually-hidden" type="radio" name="program" id="slimming" checked>
-            <label class="form-program__label label" for="slimming">Похудение</label>
-          </li>
+        <fieldset class="form-program fieldset">
+          <ul class="form-program__list list">
+            <li class="form-program__item">
+              <input class="form-program__input input visually-hidden" type="radio" name="program" id="slimming"
+                checked>
+              <label class="form-program__label label" for="slimming">Похудение</label>
+            </li>
 
-          <li class="form-program__item">
-            <input class="form-program__input input visually-hidden" type="radio" name="program" id="weight-gain">
-            <label class="form-program__label label" for="weight-gain">Набор массы</label>
-          </li>
+            <li class="form-program__item">
+              <input class="form-program__input input visually-hidden" type="radio" name="program" id="weight-gain">
+              <label class="form-program__label label" for="weight-gain">Набор массы</label>
+            </li>
 
-          <li class="form-program__item">
-            <input class="form-program__input input visually-hidden" type="radio" name="program" id="advice">
-            <label class="form-program__label label" for="advice">Не знаю (Нужен ваш совет)</label>
-          </li>
-        </ul>
-      </fieldset>
+            <li class="form-program__item">
+              <input class="form-program__input input visually-hidden" type="radio" name="program" id="advice">
+              <label class="form-program__label label" for="advice">Не знаю (Нужен ваш совет)</label>
+            </li>
+          </ul>
+        </fieldset>
+      </div>
 
       <fieldset class="form-host-contacts fieldset">
-        <legend class="form-host-contacts__legend legend legend--after">Контактные данные (владельца кота)</legend>
+        <legend class="form-host-contacts__legend legend">Контактные данные (владельца кота)</legend>
 
         <ul class="form-host-contacts__list list">
           <li class="form-host-contacts__item">
@@ -124,14 +128,16 @@
       </fieldset>
 
       <fieldset class="form-comment fieldset">
-        <legend class="form-comment__legend legend legend--after">Комментарий</legend>
+        <legend class="form-comment__legend legend">Комментарий</legend>
 
-        <textarea class="form-comment__textarea textarea" name="comment"
-          placeholder="Расскажите обо всех повадках кота"></textarea>
+        <div class="form-comment__textarea-indent">
+          <textarea class="form-comment__textarea label" name="comment"
+            placeholder="Расскажите обо всех повадках кота"></textarea>
+        </div>
       </fieldset>
 
       <fieldset class="form-additionally fieldset">
-        <legend class="form-additionally__legend legend legend--after">Дополнительно</legend>
+        <legend class="form-additionally__legend legend">Дополнительно</legend>
 
         <ul class="form-additionally__list list">
           <li class="form-additionally__item">
@@ -167,7 +173,7 @@
 
   <footer class="page-footer">
     <section class="footer-location">
-      <div class="footer-location__inner">
+      <div class="footer-location__inner footer-location__inner--color">
         <p class="footer-location__slogan">Приглашаем<br>к&nbsp;сотрудничеству<br>дилеров!</p>
 
         <P class="footer-location__address text">ул. Большая<br>Конюшенная, д.&nbsp;19/8<br>Санкт-Петербург</P>

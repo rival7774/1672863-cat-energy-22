@@ -1,9 +1,11 @@
 .legend {
   @include font(24px, 26px);
   padding: 0;
-  &--after {
   display: flex;
-  width: 100%;
+
+  @media (max-width: $only-mobile) {
+    width: 100%;
+
     &::after {
       content: "";
       display: block;
@@ -14,8 +16,13 @@
       margin: 17px 0 0 19px;
     }
   }
+
+  @media (min-width: $tablet) {
+    @include font(36px, 36px);
+    padding: 0 40px;
+  }
 }
 
-.form-host-contacts .legend--after::after {
+.form-host-contacts .legend::after {
   min-width: 99px;
 }

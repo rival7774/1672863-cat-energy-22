@@ -1,6 +1,6 @@
-.goods-list-stock {
+// .goods-list-stock {
 
-}
+// }
 
 .goods-list-stock__inner {
   width: 100%;
@@ -16,11 +16,13 @@
 
 .goods-list-stock__text {
   position: relative;
+
   @include font-arial(16px, 20px);
   color: $white;
   text-align: center;
   margin: 0;
   padding-top: 128px;
+
   &::before {
     content: "";
     position: absolute;

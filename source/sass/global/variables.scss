@@ -1,33 +1,37 @@
 $bg-green-85: rgba(104, 183, 56, 0.85);
-$border-green: #68B738;
-$bg-hover-button-green: #5EAA2F;
+$border-green: #68b738;
+$bg-hover-button-green: #5eaa2f;
 $white: #ffffff;
 $button-text-active-30: rgba(255, 255, 255, 0.3);
 $black: #000000;
 $shadow-control-16: rgba(0, 0, 0, 0.16);
+$shadow-control-19: rgba(0, 0, 0, 0.19);
+$shadow-control-20: rgba(0, 0, 0, 0.2);
 $was-dorder-hover-40: rgba(0, 0, 0, 0.4);
 $text-dark: #111111;
 $stroke-email: #222222;
 $bg-logoacademy: #666666;
-$border-control-grey: #CDCDCD;
+$border-control-grey: #cdcdcd;
 $text-dark-grey: #444444;
 $text-dark-grey-30: rgba(68, 68, 68, 0.3);
-$bg-button-hover-grey: #EBEBEB;
-$bg-blocks-grey: #F2F2F2;
-$bg-light-grey: #D3D3D3;
-$bg-section-grey: #EAEAEA;
-$border-text-grey: #D9D9D9;
-$border-menu-grey: #E6E6E6;
-$border-input-grey: #E7E7E7;
-$radio-hover-border-grey: #BABABA;
-$input-error: #FF8282;
+$bg-button-hover-grey: #ebebeb;
+$bg-blocks-grey: #f2f2f2;
+$bg-light-grey: #d3d3d3;
+$bg-section-grey: #eaeaea;
+$border-text-grey: #d9d9d9;
+$border-menu-grey: #e6e6e6;
+$border-input-grey: #e7e7e7;
+$radio-hover-border-grey: #bababa;
+$input-error: #ff8282;
 
 $only-mobile: 767px;
 $tablet: 768px;
+
 @media (min-width: $tablet) {
 
 }
 $desktop: 1440px;
+
 @media (min-width: $desktop) {
 
 }

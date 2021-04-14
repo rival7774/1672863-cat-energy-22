@@ -1,13 +1,16 @@
 .main-menu {
   display: none;
   flex-direction: column;
+
   &--active {
     display: flex;
   }
+
   @media (min-width: $tablet) {
     display: flex;
     flex-direction: row;
   }
+
   &--color .main-menu__link {
     @media (min-width: $desktop) {
       color: $white;
@@ -27,30 +30,39 @@
   text-transform: uppercase;
   text-decoration: none;
   text-align: center;
+
   @include font(20px, 20px, 500);
+
   @media (max-width: $only-mobile) {
     padding: 22px 24px;
     border-top: 1px solid $border-menu-grey;
+
     &:last-child {
       border-bottom: 1px solid $border-menu-grey;
     }
   }
+
   &:hover {
     opacity: 0.6;
   }
+
   &:active {
     opacity: 0.3;
   }
+
   &--active {
     @media (min-width: $tablet) {
       border-bottom: 2px solid $border-green;
     }
   }
+
   @media (min-width: $tablet) {
     padding: 10px 0;
     margin-left: 35px;
+
     @include font-size(18px, 24px);
   }
+
   @media (min-width: $desktop) {
     @include font-size(20px, 30px);
   }

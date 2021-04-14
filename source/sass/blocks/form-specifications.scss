@@ -1,11 +1,22 @@
 .form-specifications {
-  padding: 37px 19px 27px;
+  padding: 37px 20px 27px;
   border-bottom: 1px solid $border-text-grey;
+
+  @media (min-width: $tablet) {
+    border: none;
+    padding: 66px 67px 72px 70px;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 0 80px 0 0;
+    flex-basis: 50%;
+  }
 }
 
 .form-specifications__item {
   display: flex;
   align-items: center;
+
   &:not(:last-child) {
     padding-bottom: 13px;
   }
@@ -18,12 +29,15 @@
 .form-specifications__input {
   flex-grow: 1;
   border: 1px solid $border-input-grey;
+
   &:hover {
     border: 1px solid $border-control-grey;
   }
+
   &:focus {
     border: 2px solid $text-dark-grey;
   }
+
   &:invalid:required {
     border: 2px solid $input-error;
   }
