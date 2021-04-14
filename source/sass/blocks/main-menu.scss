@@ -59,6 +59,7 @@
   @media (min-width: $tablet) {
     padding: 10px 0;
     margin-left: 35px;
+    font-weight: 400;
 
     @include font-size(18px, 24px);
   }
