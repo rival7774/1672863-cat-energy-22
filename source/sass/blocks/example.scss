@@ -4,19 +4,22 @@
 
   @media (min-width: $tablet) {
     // box-shadow: 0px -462px 0px -1px #eaeaea inset;  альтернатива
-    background-image: linear-gradient(to bottom, transparent 30%, $bg-section-grey 30%);
+    background-image: linear-gradient(to bottom, transparent 60%, $bg-section-grey 40%);
     background-color: $white;
     padding-bottom: 64px;
   }
 
   @media (min-width: $desktop) {
     padding-top: 58px;
+    background-image: linear-gradient(to bottom, transparent 30%, $bg-section-grey 0);
   }
 }
 
 .example__conteiner {
-  display: flex;
-  align-items: flex-end;
+  @media (min-width: $desktop) {
+    display: flex;
+    align-items: flex-end;
+  }
 }
 
 .example__inner-content {
@@ -55,6 +58,8 @@
   margin: auto;
 }
 
-// .example__inner-slider {
-
-// }
+.example__inner-slider {
+  @media (min-width: $desktop) {
+    margin-left: 134px;
+  }
+}

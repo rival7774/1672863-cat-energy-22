@@ -4,4 +4,9 @@
   color: $text-dark-grey;
   padding: 13px 15px 14px;
   margin: 0;
+
+  @media (min-width: $tablet) {
+    @include font-size(20px, 30px);
+    padding: 10px 15px 10px;
+  }
 }

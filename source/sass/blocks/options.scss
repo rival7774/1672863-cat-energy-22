@@ -1,8 +1,4 @@
 .options {
-  position: relative;
-}
-
-.options__wrapper {
   display: grid;
   grid-template-columns: 124px 124px;
   grid-column-gap: 31px;
@@ -24,6 +20,10 @@
     grid-row-gap: 55px;
     padding-bottom: 0;
   }
+}
+
+.options__wrapper{
+  position: relative;
 }
 
 .options__value {

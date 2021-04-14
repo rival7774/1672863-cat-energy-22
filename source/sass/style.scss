@@ -39,21 +39,20 @@
 @import "blocks/socials.scss";
 @import "blocks/developer.scss";
 //form
+@import "blocks/label.scss";
+@import "blocks/input.scss";
+@import "blocks/legend.scss";
 @import "blocks/form-main.scss";
 @import "blocks/form-page-form.scss";
 @import "blocks/form-inner-top.scss";
 @import "blocks/form-specifications.scss";
-@import "blocks/label.scss";
-@import "blocks/input.scss";
 @import "blocks/form-program.scss";
 @import "blocks/form-comment.scss";
 @import "blocks/form-host-contacts.scss";
-@import "blocks/legend.scss";
 @import "blocks/form-additionally.scss";
 //catalog
 @import "blocks/catalog-main.scss";
 @import "blocks/cards.scss";
-@import "blocks/cards-title.scss";
 @import "blocks/all-cards.scss";
 @import "blocks/additional-goods.scss";
 @import "blocks/goods-list.scss";

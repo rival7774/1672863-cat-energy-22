@@ -7,26 +7,29 @@
 
   @media (min-width: $desktop) {
     padding: 0 0 67px 70px;
+    padding-left: calc(50% - 640px);
+    padding-right: calc(50% - 610px);
   }
 }
 
 .form-comment__legend {
-  margin: 0 0 38px;
+  margin-bottom: 38px;
 
   @media (min-width: $tablet) {
-    margin: 0 0 76px;
+    margin-bottom: 76px;
   }
 }
 
 .form-comment__textarea-indent {
-  margin-right: 20px;
+  padding-right: 20px;
 
   @media (min-width: $tablet) {
-    margin: 0 67px 0 40px;
+    padding: 0 67px 0 40px;
   }
 
   @media (min-width: $desktop) {
-    margin: 0 110px 0 40px;
+    padding: 0 0 0 40px;
+    margin-left: -10px;
   }
 }
 

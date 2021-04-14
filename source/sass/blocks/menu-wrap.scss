@@ -9,14 +9,17 @@
   }
 
   @media (min-width: $desktop) {
-    padding: 53px 110px 0;
+    padding-top: 53px;
     z-index: 2;
     width: 100%;
+    @include padding;
   }
 
   &--position {
     @media (min-width: $desktop) {
       position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
     }
   }
 }
