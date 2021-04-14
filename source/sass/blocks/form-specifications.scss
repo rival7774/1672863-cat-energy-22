@@ -41,9 +41,11 @@
 
   &:focus {
     border: 2px solid $text-dark-grey;
+    margin: -1px;
   }
 
   &:invalid:required {
     border: 2px solid $input-error;
+    margin: -1px;
   }
 }

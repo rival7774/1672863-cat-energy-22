@@ -95,3 +95,7 @@
     border: 1px solid $radio-hover-border-grey;
   }
 }
+
+.form-additionally__input:focus ~ .form-additionally__label::before {
+  outline: auto;
+}
