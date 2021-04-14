@@ -1,9 +1,22 @@
-// .footer-info {
-
-// }
+.footer-info {
+  @media (min-width: $tablet) {
+    border: none;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 55px;
+    padding-bottom: 61px;
+  }
+  @media (min-width: $desktop) {
+    padding-top: 57px;
+    padding-bottom: 57px;
+  }
+}
 
 .footer-info__item {
   border-bottom: 1px solid $border-text-grey;
   display: flex;
   justify-content: center;
+  @media (min-width: $tablet) {
+    border: none;
+  }
 }

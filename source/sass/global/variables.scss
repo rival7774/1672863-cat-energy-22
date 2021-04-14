@@ -22,5 +22,12 @@ $border-input-grey: #E7E7E7;
 $radio-hover-border-grey: #BABABA;
 $input-error: #FF8282;
 
+$only-mobile: 767px;
 $tablet: 768px;
+@media (min-width: $tablet) {
+
+}
 $desktop: 1440px;
+@media (min-width: $desktop) {
+
+}

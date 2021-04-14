@@ -1,14 +1,24 @@
 .footer-location {
   background-color: $bg-blocks-grey;
+  position: relative;
 }
 
 .footer-location__inner {
   display: flex;
   justify-content: space-between;
-  padding: 27px 19px;
+  padding: 28px 20px 26px;
   background-color: $white;
   &--color {
     background-color: $bg-blocks-grey;
+  }
+  @media (min-width: $tablet) {
+    padding: 62px 71px 51px;
+  }
+  @media (min-width: $desktop) {
+    position: absolute;
+    top: 95px;
+    left: 110px;
+    padding: 66px 76px 51px;
   }
 }
 
@@ -17,12 +27,32 @@
   text-transform: uppercase;
   color: $text-dark;
   margin: 0;
+  @media (min-width: $tablet) {
+    @include font-size(20px, 21px);
+  }
+  @media (min-width: $desktop) {
+    margin-right: 87px;
+  }
 }
 
 .footer-location__address {
   line-height: 20px;
+  @media (min-width: $tablet) {
+    text-align: end;
+    &--span {
+      display: block;
+      margin-top: 10px;
+    }
+  }
+  @media (min-width: $desktop) {
+    text-align: start;
+  }
 }
 
 .footer-location__map {
   width: 100%;
+  height: 362px;
+  @media (min-width: $tablet) {
+    height: 400px;
+  }
 }
