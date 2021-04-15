@@ -11,7 +11,7 @@
 
   @media (min-width: $desktop) {
     padding-top: 58px;
-    background-image: linear-gradient(to bottom, transparent 30%, $bg-section-grey 0);
+    background-image: linear-gradient(to bottom, transparent 36%, $bg-section-grey 0);
   }
 }
 
@@ -56,10 +56,21 @@
 
 .example__img {
   margin: auto;
+  position: relative;
+
+  @media (min-width: $desktop) {
+    margin-bottom: 16px;
+  }
 }
 
 .example__inner-slider {
   @media (min-width: $desktop) {
     margin-left: 134px;
   }
+}
+
+.example__img-skinny {
+  position: absolute;
+  top: 0;
+  right: 0;
 }

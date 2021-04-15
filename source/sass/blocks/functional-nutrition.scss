@@ -19,7 +19,11 @@
   position: absolute;
   top: 0;
   left: 0;
-  background-image: url(../img/index-background-cat-1.jpg);
+  background-image: url(../img/index-background-mobile.jpg);
+
+  @media (min-resolution: 2dppx) {
+    background-image: url(../img/index-background-mobile@x2.jpg);
+  }
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -34,9 +38,12 @@
   @media (min-width: $desktop) {
     display: block;
     position: static;
-    z-index: 0;
     width: 50%;
     background-image: url(../img/index-background-desktop.jpg);
+
+    @media (min-resolution: 2dppx) {
+      background-image: url(../img/index-background-desktop@x2.jpg);
+    }
     order: 2;
     height: 694px;
   }
@@ -95,12 +102,11 @@
 
 .functional-nutrition__img {
   margin: auto;
-  width: 280px;
-  height: 270px;
+  display: inline-flex;
 
   @media (min-width: $tablet) {
     order: 4;
-    margin: -77px 0 0;
+    margin: -77px 0 0 -88px;
     z-index: -1;
   }
 

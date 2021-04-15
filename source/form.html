@@ -17,7 +17,15 @@
   <header class="page-header">
     <div class="menu-wrap">
       <div class="page-header__logo-conteiner">
-        <a class="link-logo"><img class="logo-img img" src="img/logo-mobile.svg" alt="Логотип Кэт Энерджи"></a>
+        <a class="link-logo">
+          <picture>
+            <source media="(min-width: 1280px)" srcset="img/logo-desktop.svg">
+
+            <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+
+            <img class="logo-img img" src="img/logo-mobile.svg" alt="Логотип Кэт Энерджи">
+          </picture>
+        </a>
         <button class="button-menu button" aria-label="Кнопка меню"><span
             class="button-menu__item button-menu__item--active"></span></button>
       </div>
