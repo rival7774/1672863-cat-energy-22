@@ -86,6 +86,10 @@
   @include font-arial(14px, 14px);
   color: $text-dark-grey;
   margin: 0;
+
+  @media (min-width: $tablet) {
+    @include font-size(16px, 20px);
+  }
 }
 
 .goods-list__link {
