@@ -21,7 +21,7 @@
     grid-template-columns: repeat(auto-fit, 245px);
     grid-column-gap: 80px;
     grid-row-gap: 63px;
-    
+
     @include padding;
   }
 }
@@ -60,9 +60,9 @@
   }
 }
 
-// .cards__img {
-
-// }
+.cards__img {
+  margin: auto;
+}
 
 .cards__inner {
   padding-bottom: 22px;

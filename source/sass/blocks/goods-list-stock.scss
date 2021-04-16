@@ -13,7 +13,11 @@
 .goods-list-stock__inner {
   width: 100%;
   min-height: 289px;
-  background-image: url(../../img/cat-goods-mobile.jpg);
+  background-image: url(../../img/cat-goods.jpg);
+
+  @media (min-resolution: 2dppx) {
+    background-image: url(../../img/cat-goods@x2.jpg);
+  }
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -25,11 +29,21 @@
   @media (min-width: $tablet) {
     min-height: 200px;
     padding: 58px 124px 60px 78px;
+    background-image: url(../../img/cat-goods-tablet.jpg);
+
+  @media (min-resolution: 2dppx) {
+    background-image: url(../../img/cat-goods-tablet@x2.jpg);
+  }
   }
 
   @media (min-width: $desktop) {
     min-height: 100%;
     padding: 56px 43px 42px 41px;
+    background-image: url(../../img/cat-goods-desktop.jpg);
+
+  @media (min-resolution: 2dppx) {
+    background-image: url(../../img/cat-goods-desktop@x2.jpg);
+  }
   }
 }
 

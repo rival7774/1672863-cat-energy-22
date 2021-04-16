@@ -14,11 +14,12 @@
 }
 
 .footer-info__item {
-  border-bottom: 1px solid $border-text-grey;
   display: flex;
   justify-content: center;
 
-  @media (min-width: $tablet) {
-    border: none;
+  @media (max-width: 767px) {
+    &:not(:last-child) {
+      border-bottom: 1px solid $border-text-grey;
+    }
   }
 }
