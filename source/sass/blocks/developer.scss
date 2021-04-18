@@ -13,6 +13,10 @@
 .developer__link {
   @include font-size(16px, 18px);
   text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
 
   &:not(:last-child) {
     margin-right: 22px;
@@ -26,7 +30,11 @@
 .developer__icon {
   fill: $bg-logoacademy;
 
-  &:hover {
-    fill: $border-green;
+  @media (min-width: $tablet) {
+    margin-left: 22px;
   }
+}
+
+.developer__link:hover .developer__icon {
+  fill: $border-green;
 }
