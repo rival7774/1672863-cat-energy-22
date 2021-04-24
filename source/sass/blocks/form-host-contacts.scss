@@ -30,6 +30,7 @@
 
   @media (min-width: $desktop) {
     display: flex;
+    flex-wrap: wrap;
     padding-left: 40px;
     margin-left: -10px;
   }
@@ -37,6 +38,7 @@
 
 .form-host-contacts__item {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
 
   &:not(:last-child) {

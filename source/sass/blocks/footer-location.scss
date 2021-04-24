@@ -5,6 +5,7 @@
 
 .footer-location__inner {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   padding: 28px 20px 26px;
   background-color: $white;
@@ -16,25 +17,27 @@
   }
 
   @media (min-width: $tablet) {
-    padding: 62px 71px 51px;
+    padding: 64px 71px 57px;
   }
 
   @media (min-width: $desktop) {
     position: absolute;
     top: 95px;
     left: calc(50% - 610px);
-    padding: 66px 76px 51px;
+    padding: 62px 90px 58px 77px;
+    min-width: 570px;
   }
 }
 
 .footer-location__slogan {
-  font-size: 16px;
+  @include font-size(16px, 20px);
   text-transform: uppercase;
   color: $text-dark;
   margin: 0;
 
   @media (min-width: $tablet) {
-    @include font-size(20px, 21px);
+    @include font-size(20px, 24px);
+    margin-top: 4px;
   }
 
   @media (min-width: $desktop) {
@@ -44,9 +47,11 @@
 
 .footer-location__address {
   line-height: 20px;
+  margin-right: 3px;
 
   @media (min-width: $tablet) {
     text-align: end;
+    margin-right: 0;
   }
 
   @media (min-width: $desktop) {
@@ -57,7 +62,7 @@
 .footer-location__address-span {
   @media (min-width: $tablet) {
     display: block;
-    margin-top: 10px;
+    margin-top: 20px;
   }
 }
 

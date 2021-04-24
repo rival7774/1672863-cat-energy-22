@@ -2,6 +2,7 @@
   @include font(24px, 26px);
   padding: 0;
   display: flex;
+  flex-wrap: wrap;
 
   @media (max-width: $tablet) {
     width: 100%;

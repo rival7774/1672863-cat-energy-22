@@ -4,7 +4,6 @@ const sourcemap = require("gulp-sourcemaps");
 const sass = require("gulp-sass");
 const postcss = require("gulp-postcss");
 const csso = require('postcss-csso');
-const reload = require('reload')
 const autoprefixer = require("autoprefixer");
 const rename = require("gulp-rename");
 const htmlmin = require("gulp-htmlmin");
@@ -156,7 +155,7 @@ exports.server = server;
 
 // Relood
 
-const relood = (done) => {
+const reload = (done) => {
   sync.reload();
   done();
 };
@@ -166,8 +165,8 @@ const relood = (done) => {
 const watcher = () => {
   gulp.watch("source/sass/**/*.scss", gulp.series("styles"));
   gulp.watch("source/js/script.js", gulp.series("scripts"));
-  gulp.watch("source/*.html").on("change", sync.reload);
-  // gulp.watch("source/*.html", gulp.series(html, reload));
+  // gulp.watch("source/*.html").on("change", sync.reload);
+  gulp.watch("source/*.html", gulp.series(html, reload));
 };
 
 exports.default = gulp.series(styles, server, watcher);

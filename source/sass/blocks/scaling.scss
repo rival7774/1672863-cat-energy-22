@@ -1,21 +1,25 @@
 .scaling {
   @media (max-width: $only-mobile) {
     padding: 3px 6px;
-    margin: 0 12px;
-    width: 84px;
-    height: 14px;
+    width: 82px;
+    height: 13px;
     border: 1px solid $border-control-grey;
     border-radius: 6px;
     background-color: $white;
+    margin: 0 18px 0 19px;
   }
 
   @media (min-width: $tablet) {
     width: 428px;
     height: 6px;
     background-color: $border-control-grey;
-    margin: 0 14px;
+    margin: 0 22px;
     position: relative;
     cursor: pointer;
+  }
+
+  @media (min-width: $desktop) {
+    margin: 0 19px 0 26px;
   }
 }
 
@@ -23,7 +27,7 @@
   background-color: $border-green;
   height: 6px;
   border-radius: 6px;
-  width: 40%;
+  width: 50%;
 
   @media (min-width: $tablet) {
     position: absolute;

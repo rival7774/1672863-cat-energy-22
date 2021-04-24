@@ -1,31 +1,44 @@
 .example {
   background-color: $bg-section-grey;
-  padding-bottom: 30px;
+  padding-bottom: 35px;
 
   @media (min-width: $tablet) {
     // box-shadow: 0px -462px 0px -1px #eaeaea inset;  альтернатива
-    background-image: linear-gradient(to bottom, transparent 60%, $bg-section-grey 40%);
+    background-image: linear-gradient(to bottom, transparent 56%, $bg-section-grey 44%);
     background-color: $white;
-    padding-bottom: 64px;
+    padding-bottom: 69px;
   }
 
   @media (min-width: $desktop) {
-    padding-top: 58px;
-    background-image: linear-gradient(to bottom, transparent 36%, $bg-section-grey 0);
+    background-image: linear-gradient(to bottom, transparent 32%, $bg-section-grey 0);
+    padding-bottom: 67px;
   }
 }
 
 .example__conteiner {
   @media (min-width: $desktop) {
     display: flex;
+    flex-wrap: wrap;
     align-items: flex-end;
+
+    @media (min-width: $desktop) {
+      @include padding;
+    }
   }
 }
 
 .example__inner-content {
+  padding-left: calc(50% - 140px);
+  padding-right: calc(50% - 140px);
+
+  @media (min-width: $tablet) {
+    padding-left: calc(50% - 354px);
+    padding-right: calc(50% - 354px);
+  }
+
   @media (min-width: $desktop) {
     max-width: 436px;
-    padding-bottom: 8px;
+    padding: 0 0 8px;
   }
 }
 
@@ -37,7 +50,7 @@
   }
 
   @media (min-width: $desktop) {
-    padding: 58px 0 146px;
+    padding: 83px 0 147px;
   }
 }
 
@@ -54,23 +67,59 @@
   }
 }
 
-.example__img {
+.example__img-conteiner {
   margin: auto;
   position: relative;
 
   @media (min-width: $desktop) {
-    margin-bottom: 16px;
+    margin: 0;
   }
 }
 
 .example__inner-slider {
   @media (min-width: $desktop) {
-    margin-left: 134px;
+    align-self: flex-start;
+    position: relative;
+    right: -135px;
+  }
+}
+
+.example__img-fat {
+  width: 315px;
+  height: 242px;
+  object-fit: contain;
+
+  @media (min-width: $tablet) {
+    width: 727px;
+    height: 544px;
+    padding-left: 39px;
+    padding-top: 25px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 674px;
+    height: 574px;
+    padding: 0;
   }
 }
 
 .example__img-skinny {
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 10px;
+  right: 33px;
+  width: 251px;
+  height: 240px;
+  object-fit: contain;
+
+  @media (min-width: $tablet) {
+    width: 548px;
+    height: 546px;
+    right: 84px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 542px;
+    height: 552px;
+    right: 41px;
+  }
 }

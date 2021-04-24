@@ -42,6 +42,7 @@
       border: none;
       padding: 8px 36px 40px;
       display: flex;
+      flex-wrap: wrap;
       flex-direction: column;
       background-image: linear-gradient(to bottom, transparent 81px, $bg-blocks-grey 0);
     }
@@ -98,6 +99,7 @@
 
 .cards__characteristics {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 
   @media (min-width: $tablet) {

@@ -15,6 +15,7 @@
 
 .form-specifications__item {
   display: flex;
+  flex-wrap: wrap;
 
   &:not(:last-child) {
     padding-bottom: 13px;

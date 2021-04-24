@@ -2,6 +2,7 @@
   @media (min-width: $tablet) {
     border: none;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     padding-top: 55px;
     padding-bottom: 61px;
@@ -15,6 +16,7 @@
 
 .footer-info__item {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
 
   @media (max-width: 767px) {

@@ -23,6 +23,7 @@
   background-position: center;
   padding: 58px 61px 43px 58px;
   display: flex;
+  flex-wrap: wrap;
   align-items: flex-end;
   justify-content: center;
 
@@ -31,9 +32,9 @@
     padding: 58px 124px 60px 78px;
     background-image: url(../../img/cat-goods-tablet.jpg);
 
-  @media (min-resolution: 2dppx) {
-    background-image: url(../../img/cat-goods-tablet@x2.jpg);
-  }
+    @media (min-resolution: 2dppx) {
+      background-image: url(../../img/cat-goods-tablet@x2.jpg);
+    }
   }
 
   @media (min-width: $desktop) {
@@ -41,9 +42,9 @@
     padding: 56px 43px 42px 41px;
     background-image: url(../../img/cat-goods-desktop.jpg);
 
-  @media (min-resolution: 2dppx) {
-    background-image: url(../../img/cat-goods-desktop@x2.jpg);
-  }
+    @media (min-resolution: 2dppx) {
+      background-image: url(../../img/cat-goods-desktop@x2.jpg);
+    }
   }
 }
 
@@ -82,6 +83,7 @@
 
   @media (min-width: $tablet) {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     padding: 0;
     width: 100%;
