@@ -1,5 +1,5 @@
 .form-host-contacts {
-  padding: 0 0 24px 20px;
+  padding: 0 0 22px 20px;
 
   @media (min-width: $tablet) {
     padding: 0 67px 65px 30px;
@@ -53,9 +53,15 @@
 
   @media (min-width: $desktop) {
     &:not(:last-child) {
-      padding: 0 78px 0 0;
+      padding: 0 42px 0 0;
     }
     flex-basis: 50%;
+
+    &--phone {
+      flex-basis: auto;
+      flex-grow: 1;
+      margin-left: 38px;
+    }
   }
 }
 
@@ -70,6 +76,10 @@
   right: 15px;
   transform: translateY(-50%);
 
+  @media (min-width: $desktop) {
+    right: 18px;
+  }
+
   &--email {
     stroke: $stroke-email;
   }
@@ -81,6 +91,12 @@
 
 .form-host-contacts__label {
   padding-right: 10px;
+  margin-bottom: 6px;
+
+  @media (min-width: $tablet) {
+    padding-right: 18px;
+    margin-bottom: 6px;
+  }
 }
 
 .form-host-contacts__input {
@@ -99,6 +115,12 @@
   &:invalid:required {
     border: 2px solid $input-error;
     margin: -1px;
+  }
+
+  @media (min-width: $tablet) {
+    &--email {
+      padding-left: 23px;
+    }
   }
 }
 

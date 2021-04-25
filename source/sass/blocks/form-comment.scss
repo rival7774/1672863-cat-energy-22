@@ -1,12 +1,12 @@
 .form-comment {
-  padding: 0 0 24px 20px;
+  padding: 0 0 20px 20px;
 
   @media (min-width: $tablet) {
-    padding: 0 0 65px 30px;
+    padding: 0 0 60px 30px;
   }
 
   @media (min-width: $desktop) {
-    padding: 0 0 67px 70px;
+    padding: 0 0 60px 0;
     padding-left: calc(50% - 640px);
     padding-right: calc(50% - 610px);
   }
@@ -36,5 +36,9 @@
 .form-comment__textarea {
   width: 100%;
   min-height: 150px;
-  padding: 9px 12px 9px 15px;
+  padding: 9px 12px 9px 18px;
+
+  @media (min-width: $tablet) {
+    min-height: 174px;
+  }
 }
