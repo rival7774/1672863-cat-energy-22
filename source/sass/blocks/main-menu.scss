@@ -22,6 +22,7 @@
 
 .main-menu--no-js .main-menu {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .main-menu__link {
@@ -66,5 +67,7 @@
 
   @media (min-width: $desktop) {
     @include font-size(20px, 30px);
+    padding: 6px 0;
+    margin-bottom: 5px;
   }
 }

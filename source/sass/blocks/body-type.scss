@@ -1,7 +1,18 @@
 .body-type {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
   align-items: center;
+  margin: 32px 0 0 65px;
+
+  @media (min-width: $tablet) {
+    margin: 14px 0 0;
+    justify-content: center;
+  }
+
+  @media (min-width: $desktop) {
+    margin: 7px 0 0 78px;
+    justify-content: start;
+  }
 }
 
 .body-type__button {

@@ -1,8 +1,8 @@
 .form-inner-top {
   @media (min-width: $desktop) {
     display: flex;
-    padding: 66px 0px 69px;
     flex-wrap: wrap;
+    padding: 66px 0px 69px;
 
     @include padding;
   }

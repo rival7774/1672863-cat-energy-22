@@ -1,4 +1,8 @@
 .section-title {
-  @include font(60px, 60px,);
+  @include font(36px, 40px,);
   margin: 0;
+
+  @media (min-width: $tablet) {
+    @include font-size(60px, 60px,);
+  }
 }

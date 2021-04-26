@@ -8,7 +8,7 @@
 
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="normalize.min.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
   <title>Кэт энерджи: каталог</title>
 </head>
 
@@ -49,10 +49,14 @@
       <ul class="cards__list list conteiner">
         <li class="cards__item">
           <picture>
+            <source type="image/webp" media="(min-width: 1280px)"
+              srcset="img/chicken-500-desktop.webp, img/chicken-500-desktop@x2.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)"
+              srcset="img/chicken-500-tablet.webp, img/chicken-500-tablet@x2.webp 2x">
+            <source type="image/webp" srcset="img/chicken-500.webp, img/chicken-500@x2.webp 2x">
+
             <source media="(min-width: 1280px)" srcset="img/chicken-500-desktop.png, img/chicken-500-desktop@x2.png 2x">
-
             <source media="(min-width: 768px)" srcset="img/chicken-500-tablet.png, img/chicken-500-tablet@x2.png 2x">
-
             <img class="cards__img img" src="img/chicken-500.png" srcset="img/chicken-500@x2.png 2x"
               alt="Изображение банки корма с курицей весом 500 грам">
           </picture>
@@ -81,11 +85,15 @@
 
         <li class="cards__item">
           <picture>
+            <source type="image/webp" media="(min-width: 1280px)"
+              srcset="img/chicken-1000-desktop.webp, img/chicken-1000-desktop@x2.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)"
+              srcset="img/chicken-1000-tablet.webp, img/chicken-1000-tablet@x2.webp 2x">
+            <source type="image/webp" srcset="img/chicken-1000.webp, img/chicken-500@x2.webp 2x">
+
             <source media="(min-width: 1280px)"
               srcset="img/chicken-1000-desktop.png, img/chicken-1000-desktop@x2.png 2x">
-
             <source media="(min-width: 768px)" srcset="img/chicken-1000-tablet.png, img/chicken-1000-tablet@x2.png 2x">
-
             <img class="cards__img img" src="img/chicken-1000.png" srcset="img/chicken-1000@x2.png 2x"
               alt="Изображение банки корма с курицей весом 1000 грам">
           </picture>
@@ -114,10 +122,14 @@
 
         <li class="cards__item">
           <picture>
+            <source type="image/webp" media="(min-width: 1280px)"
+              srcset="img/fish-500-desktop.webp, img/fish-500-desktop@x2.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)"
+              srcset="img/fish-500-tablet.webp, img/fish-500-tablet@x2.webp 2x">
+            <source type="image/webp" srcset="img/fish-500.webp, img/fish-500@x2.webp 2x">
+
             <source media="(min-width: 1280px)" srcset="img/fish-500-desktop.png, img/fish-500-desktop@x2.png 2x">
-
             <source media="(min-width: 768px)" srcset="img/fish-500-tablet.png, img/fish-500-tablet@x2.png 2x">
-
             <img class="cards__img img" src="img/fish-500.png" srcset="img/fish-500.png@x2.png 2x"
               alt="Изображение банки корма с рыбай весом 500 грам">
           </picture>
@@ -146,10 +158,14 @@
 
         <li class="cards__item">
           <picture>
+            <source type="image/webp" media="(min-width: 1280px)"
+              srcset="img/fish-1000-desktop.webp, img/fish-1000-desktop@x2.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)"
+              srcset="img/fish-1000-tablet.webp, img/fish-1000-tablet@x2.webp 2x">
+            <source type="image/webp" srcset="img/fish-1000.webp, img/fish-1000@x2.webp 2x">
+
             <source media="(min-width: 1280px)" srcset="img/fish-1000-desktop.png, img/fish-1000-desktop@x2.png 2x">
-
             <source media="(min-width: 768px)" srcset="img/fish-1000-tablet.png, img/fish-1000-tablet@x2.png 2x">
-
             <img class="cards__img img" src="img/fish-1000.png" srcset="img/fish-1000.png@x2.png 2x"
               alt="Изображение банки корма с рыбай весом 1000 грам">
           </picture>
@@ -178,12 +194,16 @@
 
         <li class="cards__item">
           <picture>
+            <source type="image/webp" media="(min-width: 1280px)"
+              srcset="img/buckwheat-500-desktop.webp, img/buckwheat-500-desktop@x2.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)"
+              srcset="img/buckwheat-500-tablet.webp, img/buckwheat-500-tablet@x2.webp 2x">
+            <source type="image/webp" srcset="img/buckwheat-500.webp, img/buckwheat-500@x2.webp 2x">
+
             <source media="(min-width: 1280px)"
               srcset="img/buckwheat-500-desktop.png, img/buckwheat-500-desktop@x2.png 2x">
-
             <source media="(min-width: 768px)"
               srcset="img/buckwheat-500-tablet.png, img/buckwheat-500-tablet@x2.png 2x">
-
             <img class="cards__img img" src="img/buckwheat-500.png" srcset="img/buckwheat-500.png@x2.png 2x"
               alt="Изображение банки корма с гречкой весом 500 грам">
           </picture>
@@ -212,12 +232,16 @@
 
         <li class="cards__item">
           <picture>
+            <source type="image/webp" media="(min-width: 1280px)"
+              srcset="img/buckwheat-1000-desktop.webp, img/buckwheat-1000-desktop@x2.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)"
+              srcset="img/buckwheat-1000-tablet.webp, img/buckwheat-1000-tablet@x2.webp 2x">
+            <source type="image/webp" srcset="img/buckwheat-1000.webp, img/buckwheat-1000@x2.webp 2x">
+
             <source media="(min-width: 1280px)"
               srcset="img/buckwheat-1000-desktop.png, img/buckwheat-1000-desktop@x2.png 2x">
-
             <source media="(min-width: 768px)"
               srcset="img/buckwheat-1000-tablet.png, img/buckwheat-1000-tablet@x2.png 2x">
-
             <img class="cards__img img" src="img/buckwheat-1000.png" srcset="img/buckwheat-1000@x2.png 2x"
               alt="Изображение банки корма с гречкой весом 1000 грам">
           </picture>
@@ -246,10 +270,14 @@
 
         <li class="cards__item">
           <picture>
+            <source type="image/webp" media="(min-width: 1280px)"
+              srcset="img/rice-1000-desktop.webp, img/rice-1000-desktop@x2.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)"
+              srcset="img/rice-1000-tablet.webp, img/rice-1000-tablet@x2.webp 2x">
+            <source type="image/webp" srcset="img/rice-1000.webp, img/rice-1000@x2.webp 2x">
+
             <source media="(min-width: 1280px)" srcset="img/rice-1000-desktop.png, img/rice-1000-desktop@x2.png 2x">
-
             <source media="(min-width: 768px)" srcset="img/rice-1000-tablet.png, img/rice-1000-tablet@x2.png 2x">
-
             <img class="cards__img img" src="img/rice-1000.png" srcset="img/rice-1000@x2.png 2x"
               alt="Изображение банки корма с рисом весом 1000 грам">
           </picture>
@@ -387,7 +415,7 @@
           <li class="socials__item">
             <a class="socials__link" href="#" aria-label="Кэт энерджи в fecebook">
               <svg class="socials__icon socials__icon--fecebook" width="22" height="22">
-                <use href="img/sprite.svg#icon-fecebook"></use>
+                <use href="img/sprite.svg#icon-facebook"></use>
               </svg>
             </a>
           </li>
@@ -399,7 +427,7 @@
           HTML Academy
 
           <svg class="developer__icon" width="27" height="34">
-            <use href="img/sprite.svg#icon-html"></use>
+            <use href="img/sprite.svg#logo-htmlacademi"></use>
           </svg>
         </a>
       </div>
