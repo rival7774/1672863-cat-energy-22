@@ -14,9 +14,11 @@
 
 .form-host-contacts__legend {
   margin-bottom: 35px;
+  max-width: 181px;
 
   @media (min-width: $tablet) {
     margin-bottom: 76px;
+    max-width: max-content;
   }
 }
 

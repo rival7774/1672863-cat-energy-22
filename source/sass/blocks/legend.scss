@@ -3,19 +3,34 @@
   padding: 0;
   position: relative;
 
-
   &::after {
     content: "";
     position: absolute;
     height: 2px;
-    width: 100%;
+    width: 100vw;
     background-color: $border-green;
-    left: 100%;
+    left: 118%;
+    top: 56%;
+
+    @media (min-width: $tablet) {
+      left: 100%;
+      top: 62%;
+    }
   }
 
   @media (min-width: $tablet) {
     @include font(36px, 36px);
     padding: 0 40px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      height: 2px;
+      width: 100vw;
+      background-color: $border-green;
+      right: 100%;
+      top: 62%;
+    }
   }
 
   @media (min-width: $desktop) {
@@ -23,6 +38,9 @@
   }
 }
 
-// .form-host-contacts .legend::after {
-//   min-width: 97px;
-// }
+.form-host-contacts .legend::after {
+  @media (max-width: $only-mobile) {
+    top: 30%;
+    left: 111%;
+  }
+}
