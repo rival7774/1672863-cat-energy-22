@@ -38,9 +38,30 @@
   }
 }
 
-.form-host-contacts .legend::after {
-  @media (max-width: $only-mobile) {
-    top: 30%;
-    left: 111%;
+.form-host-contacts .legend {
+  &::after{
+    @media (max-width: $only-mobile) {
+      top: 30%;
+      left: 111%;
+    }
+  }
+}
+
+.additional-goods .legend {
+  &::after {
+    @media (max-width: $only-mobile) {
+      top: 63%;
+      left: 110%;
+    }
+
+    @media (min-width: $tablet) {
+      top: 70%;
+    }
+  }
+
+  &::before {
+    @media (min-width: $tablet) {
+      top: 70%;
+    }
   }
 }

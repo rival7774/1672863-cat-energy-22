@@ -7,7 +7,7 @@
   margin: auto;
 
   @media (min-width: $tablet) {
-    padding: 0 30px 68px;
+    padding: 0 30px 71px;
     display: grid;
     grid-template-columns: repeat(auto-fit, 324px);
     grid-column-gap: 60px;
@@ -17,7 +17,7 @@
   }
 
   @media (min-width: $desktop) {
-    padding: 0 110px 76px;
+    padding: 0 110px 80px;
     grid-template-columns: repeat(auto-fit, 245px);
     grid-column-gap: 80px;
     grid-row-gap: 63px;
@@ -40,9 +40,8 @@
 
     &:not(:last-child) {
       border: none;
-      padding: 8px 36px 40px;
+      padding: 8px 37px 40px;
       display: flex;
-      flex-wrap: wrap;
       flex-direction: column;
       background-image: linear-gradient(to bottom, transparent 81px, $bg-blocks-grey 0);
     }
@@ -56,13 +55,26 @@
     width: 245px;
 
     &:not(:last-child) {
-      padding: 0 30px 40px 35px;
+      padding: 1px 30px 40px 35px;
     }
   }
 }
 
 .cards__img {
   margin: auto;
+  object-fit: contain;
+  width: 140px;
+  height: 112px;
+
+  @media (min-width: $tablet) {
+    width: 168px;
+    height: 200px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 172px;
+    height: 196px;
+  }
 }
 
 .cards__inner {
@@ -71,6 +83,10 @@
   @media (min-width: $tablet) {
     padding-bottom: 33px;
   }
+
+  @media (min-width: $desktop) {
+    padding: 0 8px 33px 6px;
+  }
 }
 
 .cards__title {
@@ -78,19 +94,19 @@
   color: $stroke-email;
   width: 76px;
   text-transform: uppercase;
-  padding-bottom: 18px;
+  padding-bottom: 14px;
   margin: 0;
 
   @media (min-width: $tablet) {
     @include font(20px, 24px);
     width: 174px;
     text-align: center;
-    margin: 34px 36px 21px 42px;
+    margin: 34px 36px 21px 40px;
     padding: 0 20px;
   }
 
   @media (min-width: $desktop) {
-    margin: 46px 15px 22px 20px;
+    margin: 47px 15px 24px 12px;
     line-height: 21px;
     width: 145px;
     padding: 0;
@@ -106,13 +122,14 @@
     padding-bottom: 9px;
     border-bottom: 1px solid $border-control-grey;
 
+
     &:not(:last-child) {
       margin-bottom: 5px;
     }
   }
 
   @media (min-width: $desktop) {
-    padding-bottom: 10px;
+    padding-bottom: 8px;
 
     &:not(:last-child) {
       margin-bottom: 7px;
@@ -122,4 +139,9 @@
 
 .cards__button {
   grid-column: 1/-1;
+
+  @media (min-width: $desktop) {
+    width: 167px;
+    margin-left: 5px;
+  }
 }
