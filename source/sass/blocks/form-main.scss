@@ -2,8 +2,22 @@
 
 // }
 
+.form-main__inner {
+  padding-left: calc(50% - 140px);
+  padding-right: calc(50% - 140px);
+
+  @media (min-width: $tablet) {
+    padding: 0 67px 0 70px;
+  }
+
+  @media (min-width: $desktop) {
+    padding-left: calc(50% - 610px);
+    padding-right: calc(50% - 610px);
+  }
+}
+
 .form-main__main-title {
-  padding: 27px 0 37px;
+  padding: 29px 0 37px;
 
   @media (min-width: $tablet) {
     padding: 64px 0 54px;

@@ -1,8 +1,4 @@
 .fieldset {
   border: none;
   margin: 0;
-
-  @media (min-width: $tablet) {
-    border-top: 2px solid $border-green;
-  }
 }

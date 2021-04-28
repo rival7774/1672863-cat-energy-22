@@ -41,9 +41,21 @@
     opacity: 0.3;
   }
 
+  &--vkontakte {
+    width: 23px;
+    height: 16px;
+  }
+
+  &--instagram {
+    width: 16px;
+    height: 16px;
+  }
+
   &--fecebook {
     stroke: $bg-logoacademy;
     fill: transparent;
+    width: 22px;
+    height: 22px;
 
     &:hover {
       stroke: $border-green;

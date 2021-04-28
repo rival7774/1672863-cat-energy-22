@@ -41,10 +41,10 @@
   </header>
 
   <main class="form-main">
-    <div class="conteiner">
+    <div class="form-main__inner">
       <h1 class="form-main__main-title main-title">Подбор программы</h1>
 
-      <p class="form-main__subtitle subtitle">Заполните анкету, и мы подберем<br>программу питания для вашего кот</p>
+      <p class="form-main__subtitle subtitle">Заполните анкету, и мы подберем<br>программу питания для вашего котa</p>
     </div>
 
     <form class="form-page-form" action="https://echo.htmlacademy.ru" method="get">
@@ -63,7 +63,7 @@
             </li>
 
             <li class="form-specifications__item">
-              <label class="form-specifications__label label" for="age">Возраст (лет):<sup>*</sup></label>
+              <label class="form-specifications__label label" for="age">Возраст&nbsp;(лет):<sup>*</sup></label>
               <input class="form-specifications__input input" type="number" name="age" id="age" value="7" required>
             </li>
           </ul>
@@ -97,8 +97,8 @@
           <li class="form-host-contacts__item">
             <label class="form-host-contacts__label label" for="email">E-mail:<sup>*</sup></label>
             <div class="form-host-contacts__input-inner">
-              <input class="form-host-contacts__input input" type="email" name="email" id="email"
-                value="kuklachev@gmail.com" required>
+              <input class="form-host-contacts__input input form-host-contacts__input--email" type="email" name="email"
+                id="email" value="kuklachev@gmail.com" required>
               <svg class="form-host-contacts__icon form-host-contacts__icon--email" width="20" height="15"
                 viewBox="0 0 20 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <line x1="1.65" y1="5.84766" x2="1.65" y2="13.8477" stroke-width="1.3" />
@@ -111,7 +111,7 @@
             </div>
           </li>
 
-          <li class="form-host-contacts__item">
+          <li class="form-host-contacts__item form-host-contacts__item--phone">
             <label class="form-host-contacts__label label" for="tel">Телефон:<sup>*</sup></label>
             <div class="form-host-contacts__input-inner">
               <input class="form-host-contacts__input input" type="tel" name="tel" id="tel" value="8 (960) 900-60-90"

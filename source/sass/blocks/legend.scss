@@ -1,26 +1,36 @@
 .legend {
   @include font(24px, 26px);
   padding: 0;
-  display: flex;
-  flex-wrap: wrap;
+  position: relative;
 
-  @media (max-width: $tablet) {
-    width: 100%;
+  &::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 100vw;
+    background-color: $border-green;
+    left: 118%;
+    top: 56%;
 
-    &::after {
-      content: "";
-      display: block;
-      height: 2px;
-      width: 1px;
-      background-color: $border-green;
-      flex-grow: 1;
-      margin: 17px 0 0 19px;
+    @media (min-width: $tablet) {
+      left: 100%;
+      top: 62%;
     }
   }
 
   @media (min-width: $tablet) {
     @include font(36px, 36px);
     padding: 0 40px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      height: 2px;
+      width: 100vw;
+      background-color: $border-green;
+      right: 100%;
+      top: 62%;
+    }
   }
 
   @media (min-width: $desktop) {
@@ -29,5 +39,8 @@
 }
 
 .form-host-contacts .legend::after {
-  min-width: 99px;
+  @media (max-width: $only-mobile) {
+    top: 30%;
+    left: 111%;
+  }
 }
