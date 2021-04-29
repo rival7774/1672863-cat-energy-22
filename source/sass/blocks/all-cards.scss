@@ -1,6 +1,6 @@
 .all-cards {
   border-bottom: 1px solid $bg-button-hover-grey;
-  padding: 41px 20px 25px;
+  padding: 41px 20px 23px;
 
   @media (min-width: $tablet) {
     padding: 81px 0 0 0;
@@ -10,12 +10,12 @@
 .all-cards__inner {
   @media (min-width: $tablet) {
     border: 2px solid $bg-blocks-grey;
-    padding: 82px 37px 40px;
+    padding: 82px 37px 36px;
     height: 100%;
   }
 
   @media (min-width: $desktop) {
-    padding: 81px 37px 40px;
+    padding: 79px 37px 39px;
   }
 }
 
@@ -72,6 +72,12 @@
   @media (min-width: $tablet) {
     padding: 0 0 87px;
     line-height: 18px;
+    width: 226px;
+    margin: auto;
+  }
+
+  @media (min-width: $desktop) {
+    width: auto;
   }
 }
 

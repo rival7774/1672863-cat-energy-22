@@ -81,6 +81,18 @@ const optimizeImagesWebp = () => {
 
 exports.optimizeImagesWebp = optimizeImagesWebp;
 
+const optimizeImagesFavicon = () => {
+  return gulp.src("source/img/favicon/*.{png,jpg,svg}")
+    .pipe(imagemin([
+      imagemin.mozjpeg({progressive: true}),
+      imagemin.optipng({optimizationLevel: 3}),
+      imagemin.svgo()
+    ]))
+    .pipe(gulp.dest("build/img/favicon"));
+};
+
+exports.optimizeImagesFavicon = optimizeImagesFavicon;
+
 const copyImages = () => {
   return gulp.src("source/img/*.{png,jpg,svg}")
     .pipe(gulp.dest("build/img"));
@@ -94,6 +106,13 @@ const copyImagesWebp = () => {
 };
 
 exports.copyImagesWebp = copyImagesWebp;
+
+const copyImagesFavicon = () => {
+  return gulp.src("source/img/favicon/*.{png,jpg,svg}")
+    .pipe(gulp.dest("build/img/favicon"));
+};
+
+exports.copyImagesFavicon = copyImagesFavicon;
 
 // webP
 
@@ -122,6 +141,7 @@ const copy = (done) => {
   gulp.src([
     "source/fonts/*.{woff2,woff}",
     "source/*.ico",
+    "source/*.webmanifest"
   ], {
     base: "source"
   })
@@ -165,7 +185,6 @@ const reload = (done) => {
 const watcher = () => {
   gulp.watch("source/sass/**/*.scss", gulp.series("styles"));
   gulp.watch("source/js/script.js", gulp.series("scripts"));
-  // gulp.watch("source/*.html").on("change", sync.reload);
   gulp.watch("source/*.html", gulp.series(html, reload));
 };
 
@@ -178,6 +197,7 @@ const build = gulp.series(
   copy,
   optimizeImages,
   optimizeImagesWebp,
+  optimizeImagesFavicon,
   gulp.parallel(
     styles,
     html,
@@ -196,6 +216,7 @@ exports.default = gulp.series(
   copy,
   copyImages,
   copyImagesWebp,
+  copyImagesFavicon,
   gulp.parallel(
     styles,
     html,

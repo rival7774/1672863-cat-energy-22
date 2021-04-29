@@ -2,18 +2,18 @@
   padding: 36px 20px 39px 0;
 
   @media (min-width: $tablet) {
-    padding: 80px 30px 69px 0;
+    padding: 87px 30px 69px 0;
   }
 
   @media (min-width: $desktop) {
-    padding: 80px 79px 0 40px;
+    padding: 85px 79px 0 40px;
     margin-left: -10px;
   }
 }
 
 .goods-list__item {
   border-top: 1px solid $border-control-grey;
-  padding: 13px 0 18px;
+  padding: 12px 0 18px;
 
   &:last-child {
     border-bottom: 1px solid $border-control-grey;
@@ -22,7 +22,7 @@
   @media (min-width: $tablet) {
     border: 1px solid $border-control-grey;
     margin-bottom: -1px;
-    padding: 26px 38px 28px;
+    padding: 24px 38px 27px;
     display: flex;
     flex-wrap: wrap;
     align-items: baseline;
@@ -39,7 +39,7 @@
     display: grid;
     grid-template-columns: 287px 288px 245px;
     grid-column-gap: 38px;
-    padding: 15px 0 17px;
+    padding: 18px 0 13px;
   }
 }
 
@@ -49,10 +49,11 @@
   color: $stroke-email;
   padding-bottom: 13px;
   width: 100%;
+  margin: 0;
 
   @media (min-width: $tablet) {
     @include font-size(20px, 20px);
-    padding-bottom: 28px;
+    padding-bottom: 27px;
     margin: 0;
     flex-basis: 50%;
 

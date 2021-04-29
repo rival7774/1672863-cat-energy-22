@@ -6,7 +6,7 @@
   }
 
   @media (min-width: $desktop) {
-    padding: 80px 0 0;
+    padding: 78px 0 0;
   }
 }
 
@@ -19,7 +19,7 @@
     background-image: url(../../img/cat-goods@x2.jpg);
   }
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   background-position: center;
   padding: 58px 61px 43px 58px;
   display: flex;
@@ -29,7 +29,7 @@
 
   @media (min-width: $tablet) {
     min-height: 200px;
-    padding: 58px 124px 60px 78px;
+    padding: 63px 125px 67px 88px;
     background-image: url(../../img/cat-goods-tablet.jpg);
 
     @media (min-resolution: 2dppx) {
@@ -38,8 +38,10 @@
   }
 
   @media (min-width: $desktop) {
-    min-height: 100%;
-    padding: 56px 43px 42px 41px;
+    min-height: max-content;
+    padding: 58px 43px 44px 41px;
+    margin-top: 8px;
+    max-width: 245px;
     background-image: url(../../img/cat-goods-desktop.jpg);
 
     @media (min-resolution: 2dppx) {
@@ -55,7 +57,7 @@
   color: $white;
   text-align: center;
   margin: 0;
-  padding-top: 128px;
+  padding-top: 122px;
 
   &::before {
     content: "";
@@ -67,24 +69,29 @@
     height: 61px;
     background-image: url(../../img/icon-gift.svg);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
 
     @media (min-width: $tablet) {
-      position: static;
+      position: absolute;
       display: block;
       transform: translateX(0);
+      width: 60px;
+      height: 64px;
+      top: -10px;
+      left: 0;
     }
 
     @media (min-width: $desktop) {
       position: absolute;
       transform: translateX(-50%);
+      top: 3px;
+      left: 83px;
     }
   }
 
   @media (min-width: $tablet) {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: flex-end;
     padding: 0;
     width: 100%;
     text-align: start;
