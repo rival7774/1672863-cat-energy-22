@@ -39,6 +39,10 @@
     @include font-size(30px, 37px);
     padding: 13px 20px 20px;
   }
+
+  @media (min-width: $desktop) {
+    padding: 15px 29px 20px;
+  }
 }
 
 .options__description {

@@ -93,14 +93,14 @@
   &--slimming::before {
     width: 50px;
     height: 53px;
-    background-image: url(../../img/cat-slimming.svg);
+    background-image: url(../img/cat-slimming.svg);
     background-size: contain;
     margin-right: 22px;
 
     @media (min-width: $tablet) {
       width: 200px;
       height: 211px;
-      background-image: url(../../img/cat-slimming-tablet.svg);
+      background-image: url(../img/cat-slimming-tablet.svg);
       right: -217px;
       margin-right: 0;
     }
@@ -109,13 +109,13 @@
   &--weight::before {
     width: 67px;
     height: 50px;
-    background-image: url(../../img/cat-weight.svg);
+    background-image: url(../img/cat-weight.svg);
     margin-left: -7px;
 
     @media (min-width: $tablet) {
       width: 268px;
       height: 200px;
-      background-image: url(../../img/cat-weight-tablet.svg);
+      background-image: url(../img/cat-weight-tablet.svg);
       right: -286px;
       top: 14px;
     }
@@ -130,14 +130,14 @@
     &--slimming::before {
       width: 100px;
       height: 106px;
-      background-image: url(../../img/cat-slimming-desktop.svg);
+      background-image: url(../img/cat-slimming-desktop.svg);
       margin-right: 62px;
     }
 
     &--weight::before {
       width: 134px;
       height: 100px;
-      background-image: url(../../img/cat-weight-desktop.svg);
+      background-image: url(../img/cat-weight-desktop.svg);
       margin: 0 48px 0 -19px;
     }
   }
