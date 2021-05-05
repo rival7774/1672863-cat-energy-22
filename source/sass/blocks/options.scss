@@ -22,7 +22,7 @@
   }
 }
 
-.options__wrapper{
+.options__wrapper {
   position: relative;
 }
 
@@ -50,13 +50,12 @@
   bottom: -15px;
   left: 50%;
   transform: translateX(-50%);
-  text-transform: uppercase;
 
   @include font-arial(12px, 12px);
   text-align: center;
   text-transform: lowercase;
   width: 87px;
-  padding: 0px 4px;
+  padding: 0 4px;
   background-color: $bg-section-grey;
 
   @media (min-width: $tablet) {
