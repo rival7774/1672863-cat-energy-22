@@ -39,7 +39,7 @@
 }
 
 .form-host-contacts .legend {
-  &::after{
+  &::after {
     @media (max-width: $only-mobile) {
       top: 30%;
       left: 111%;

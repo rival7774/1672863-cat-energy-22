@@ -22,7 +22,7 @@
   }
 }
 
-.options__wrapper{
+.options__wrapper {
   position: relative;
 }
 
@@ -39,6 +39,10 @@
     @include font-size(30px, 37px);
     padding: 13px 20px 20px;
   }
+
+  @media (min-width: $desktop) {
+    padding: 15px 29px 20px;
+  }
 }
 
 .options__description {
@@ -46,13 +50,12 @@
   bottom: -15px;
   left: 50%;
   transform: translateX(-50%);
-  text-transform: uppercase;
 
   @include font-arial(12px, 12px);
   text-align: center;
   text-transform: lowercase;
   width: 87px;
-  padding: 0px 4px;
+  padding: 0 4px;
   background-color: $bg-section-grey;
 
   @media (min-width: $tablet) {

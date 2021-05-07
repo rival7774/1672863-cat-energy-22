@@ -15,6 +15,7 @@
 
   @media (min-width: $desktop) {
     padding: 0 110px 82px;
+
     @include padding;
   }
 }

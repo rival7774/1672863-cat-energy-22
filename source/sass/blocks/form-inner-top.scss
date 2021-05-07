@@ -2,7 +2,7 @@
   @media (min-width: $desktop) {
     display: flex;
     flex-wrap: wrap;
-    padding: 66px 0px 69px;
+    padding: 66px 0 69px;
 
     @include padding;
   }
