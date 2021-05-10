@@ -21,10 +21,10 @@
   position: absolute;
   top: 0;
   left: 0;
-  background-image: url("../img/index-background-mobile.jpg");
+  background-image: linear-gradient($bg-green-85, $bg-green-85), url("../img/index-background-mobile.jpg");
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../img/index-background-mobile@x2.jpg");
+    background-image: linear-gradient($bg-green-85, $bg-green-85), url("../img/index-background-mobile@x2.jpg");
   }
   background-repeat: no-repeat;
   background-size: cover;
@@ -41,20 +41,14 @@
     display: block;
     position: static;
     width: 50%;
-    background-image: url("../img/index-background-desktop.jpg");
+    background-image: linear-gradient($bg-green-85, $bg-green-85), url("../img/index-background-desktop.jpg");
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/index-background-desktop@x2.jpg");
+      background-image: linear-gradient($bg-green-85, $bg-green-85), url("../img/index-background-desktop@x2.jpg");
     }
     order: 2;
     height: 694px;
   }
-}
-
-.functional-nutrition__bg {
-  background-color: $bg-green-85;
-  width: 100%;
-  height: 100%;
 }
 
 .functional-nutrition__wrapper-content {
