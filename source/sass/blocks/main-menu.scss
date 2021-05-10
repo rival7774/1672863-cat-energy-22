@@ -65,9 +65,9 @@
 }
 
 .main-menu--color-link .main-menu__link {
-    @media (min-width: $desktop) {
-      color: $white;
-      border-color: $white;
-      background-color: transparent;
-    }
+  @media (min-width: $desktop) {
+    color: $white;
+    border-color: $white;
+    background-color: transparent;
   }
+}
