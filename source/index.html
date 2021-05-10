@@ -12,6 +12,8 @@
   <link rel="icon" href="img/favicon/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicon/180.png">
   <link rel="manifest" href="manifest.webmanifest">
+  <link rel="preload" href="fonts/oswaldregular.woff" as="font">
+  <link rel="preload" href="fonts/oswaldmedium.woff" as="font">
   <title>Кэт энерджи</title>
 </head>
 
@@ -25,15 +27,14 @@
 
             <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
 
-            <img class="logo-img img" src="img/logo-mobile.svg" alt="Логотип Кэт Энерджи">
+            <img class="logo-img img" width="190" height="38" src="img/logo-mobile.svg" alt="Логотип Кэт Энерджи">
           </picture>
         </a>
         <button class="button-menu button" aria-label="Кнопка меню"><span
             class="button-menu__item button-menu__item--active"></span></button>
       </div>
-
-      <nav class="main-menu main-menu--color main-menu--active">
-        <!--main-menu--no-js-->
+      <!--main-menu--no-js-->
+      <nav class="main-menu main-menu--color-link main-menu--active">
         <a class="main-menu__link main-menu__link--active">Главная</a>
 
         <a class="main-menu__link" href="catalog.html">Каталог продукции</a>
@@ -47,7 +48,6 @@
     <section class="functional-nutrition">
       <div class="functional-nutrition__inner">
         <div class="functional-nutrition__bg-img">
-          <div class="functional-nutrition__bg"></div>
         </div>
 
         <div class="functional-nutrition__wrapper-content">
@@ -69,7 +69,7 @@
                   srcset="img/header-cat-pro-desktop.png, img/header-cat-pro-desktop@x2.png 2x">
                 <source media="(min-width: 768px)"
                   srcset="img/header-cat-pro-tablet.jpg, img/header-cat-pro-tablet@x2.jpg 2x">
-                <img class="img functional-nutrition__img" weight="280" height="270" src="img/header-cat-pro.png"
+                <img class="img functional-nutrition__img" width="280" height="270" src="img/header-cat-pro.png"
                   srcset="img/header-cat-pro@x2.png 2x" alt="Изображение банки с кормом cat pro energy">
               </picture>
             </div>
@@ -145,20 +145,20 @@
             16 часов в день. </p>
 
           <div class="options">
-            <div class="options__wrapper">
-              <dd class="options__value value">5 кг</dd>
+            <dl class="options__wrapper">
               <dt class="options__description description">Снижение веса</dt>
-            </div>
+              <dd class="options__value value">5 кг</dd>
+            </dl>
 
-            <div class="options__wrapper">
-              <dd class="options__value value">60 дней</dd>
+            <dl class="options__wrapper">
               <dt class="options__description description">Затрачено времени</dt>
-            </div>
+              <dd class="options__value value">60 дней</dd>
+            </dl>
 
-            <div class="options__options-expenses options-expenses">
+            <dl class="options__options-expenses options-expenses">
               <dt class="options-expenses__description subtitle">Затраты на питание:</dt>
               <dd class="options-expenses__value subtitle">15 000 руб.</dd>
-            </div>
+            </dl>
           </div>
         </div>
 
@@ -185,7 +185,8 @@
           <div class="body-type">
             <button class="body-type__button button">Было</button>
             <div class="scaling">
-              <div class="scaling__slider"></div>
+              <div class="scaling__slider" tabindex="0" aria-label="Ползунок увелечиния и уменьшения массы котямбы">
+              </div>
             </div>
             <button class="body-type__button button">Стало</button>
           </div>
@@ -195,7 +196,7 @@
   </main>
 
   <footer class="page-footer">
-    <section class="footer-location">
+    <div class="footer-location">
       <div class="footer-location__inner">
         <p class="footer-location__slogan">Приглашаем<br>к&nbsp;сотрудничеству<br>дилеров!</p>
 
@@ -206,9 +207,9 @@
       <iframe class="footer-location__map img"
         src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1998.600533739354!2d30.32215711793054!3d59.938770465242236!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1616884664318!5m2!1sru!2sru"
         style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-    </section>
+    </div>
 
-    <section class="footer-info conteiner">
+    <div class="footer-info conteiner">
       <a class="footer-info__item footer-logo" href="index.html" aria-label="Логотип магазина Кэт Энерджи">
         <img class="footer-logo__icon img" src="img/footer-logo.svg" alt="Логотип магазина Кэт Энерджи">
       </a>
@@ -250,7 +251,7 @@
           </svg>
         </a>
       </div>
-    </section>
+    </div>
   </footer>
 
 </body>

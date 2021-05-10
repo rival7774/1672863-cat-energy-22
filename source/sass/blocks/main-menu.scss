@@ -10,14 +10,6 @@
     display: flex;
     flex-direction: row;
   }
-
-  &--color .main-menu__link {
-    @media (min-width: $desktop) {
-      color: $white;
-      border-color: $white;
-      background-color: transparent;
-    }
-  }
 }
 
 .main-menu--no-js .main-menu {
@@ -71,3 +63,11 @@
     margin-bottom: 5px;
   }
 }
+
+.main-menu--color-link .main-menu__link {
+    @media (min-width: $desktop) {
+      color: $white;
+      border-color: $white;
+      background-color: transparent;
+    }
+  }
