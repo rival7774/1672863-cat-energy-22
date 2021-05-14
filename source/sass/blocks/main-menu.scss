@@ -1,6 +1,7 @@
 .main-menu {
   display: none;
   flex-direction: column;
+  flex-wrap: wrap;
 
   &--active {
     display: flex;
@@ -9,6 +10,11 @@
   @media (min-width: $tablet) {
     display: flex;
     flex-direction: row;
+    max-width: 517px;
+  }
+
+  @media (min-width: $desktop) {
+    max-width: 610px;
   }
 }
 

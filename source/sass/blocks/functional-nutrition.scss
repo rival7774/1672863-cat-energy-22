@@ -89,6 +89,7 @@
 .functional-nutrition__subtitle {
   color: $white;
   padding: 25px 0 29px;
+  z-index: 1;
 
   @media (min-width: $tablet) {
     color: $black;

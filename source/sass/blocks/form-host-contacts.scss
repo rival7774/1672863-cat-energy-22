@@ -84,6 +84,7 @@
 
   &--email {
     stroke: $stroke-email;
+    fill: none;
   }
 
   &--phone {
@@ -124,10 +125,6 @@
       padding-left: 23px;
     }
   }
-}
-
-.form-host-contacts__icon--email {
-  fill: none;
 }
 
 .form-host-contacts__input:focus ~ .form-host-contacts__icon--email {

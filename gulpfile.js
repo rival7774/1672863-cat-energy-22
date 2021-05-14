@@ -37,7 +37,9 @@ exports.styles = styles;
 
 const html = () => {
   return gulp.src("source/**/*.html") //   **/-Все подпапки в папке sourse
-    .pipe(htmlmin({ collapseWhitespace: true }))
+    .pipe(htmlmin({
+      collapseWhitespace: true
+    }))
     .pipe(gulp.dest("build"));
 };
 
@@ -60,8 +62,12 @@ exports.scripts = scripts;
 const optimizeImages = () => {
   return gulp.src("source/img/*.{png,jpg,svg}")
     .pipe(imagemin([
-      imagemin.mozjpeg({progressive: true}),
-      imagemin.optipng({optimizationLevel: 3}),
+      imagemin.mozjpeg({
+        progressive: true
+      }),
+      imagemin.optipng({
+        optimizationLevel: 3
+      }),
       imagemin.svgo()
     ]))
     .pipe(gulp.dest("build/img"));
@@ -72,8 +78,12 @@ exports.optimizeImages = optimizeImages;
 const optimizeImagesWebp = () => {
   return gulp.src("source/img/webp/*.{png,jpg,svg}")
     .pipe(imagemin([
-      imagemin.mozjpeg({progressive: true}),
-      imagemin.optipng({optimizationLevel: 3}),
+      imagemin.mozjpeg({
+        progressive: true
+      }),
+      imagemin.optipng({
+        optimizationLevel: 3
+      }),
       imagemin.svgo()
     ]))
     .pipe(gulp.dest("build/img"));
@@ -84,8 +94,12 @@ exports.optimizeImagesWebp = optimizeImagesWebp;
 const optimizeImagesFavicon = () => {
   return gulp.src("source/img/favicon/*.{png,jpg,svg}")
     .pipe(imagemin([
-      imagemin.mozjpeg({progressive: true}),
-      imagemin.optipng({optimizationLevel: 3}),
+      imagemin.mozjpeg({
+        progressive: true
+      }),
+      imagemin.optipng({
+        optimizationLevel: 3
+      }),
       imagemin.svgo()
     ]))
     .pipe(gulp.dest("build/img/favicon"));
@@ -118,7 +132,9 @@ exports.copyImagesFavicon = copyImagesFavicon;
 
 const createWebp = () => {
   return gulp.src("source/img/webp/*.{png,jpg}")
-    .pipe(webp({quality: 80}))
+    .pipe(webp({
+      quality: 80
+    }))
     .pipe(gulp.dest("build/img"));
 };
 
@@ -128,7 +144,9 @@ exports.createWebp = createWebp;
 
 const sprite = () => {
   return gulp.src("source/img/icons/*.svg")
-    .pipe(svgstore({inlineSvg: true}))
+    .pipe(svgstore({
+      inlineSvg: true
+    }))
     .pipe(rename("sprite.svg"))
     .pipe(gulp.dest("build/img"));
 };
@@ -139,14 +157,13 @@ exports.sprite = sprite;
 
 const copy = (done) => {
   gulp.src([
-    "source/fonts/*.{woff2,woff}",
-    "source/*.ico",
-    "source/*.webmanifest",
-    "source/*.min.css"
-  ], {
-    base: "source"
-  })
-  .pipe(gulp.dest("build"));
+      "source/fonts/*.{woff2,woff}",
+      "source/*.ico",
+      "source/*.webmanifest",
+    ], {
+      base: "source"
+    })
+    .pipe(gulp.dest("build"));
   done();
 };
 

@@ -5,7 +5,6 @@
 
 .footer-location__inner {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
   padding: 28px 20px 26px;
   background-color: $white;
@@ -25,7 +24,9 @@
     top: 95px;
     left: calc(50% - 610px);
     padding: 62px 90px 58px 77px;
-    min-width: 570px;
+    max-width: 570px;
+    max-height: 201px;
+    overflow: auto;
   }
 }
 
