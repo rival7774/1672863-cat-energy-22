@@ -94,41 +94,46 @@
 }
 
 .example__img-fat {
-  width: 315px;
+  width: 98%;
   height: 242px;
-  object-fit: contain;
+  object-fit: cover;
+  object-position: left;
 
   @media (min-width: $tablet) {
-    width: 727px;
+    width: 50%;
     height: 544px;
-    padding-left: 39px;
+    padding-left: 46px;
     padding-top: 25px;
   }
 
   @media (min-width: $desktop) {
-    width: 674px;
-    height: 574px;
+    width: 53%;
+    height: 519px;
     padding: 0;
+    margin-top: 28px;
   }
 }
 
 .example__img-skinny {
   position: absolute;
-  top: 10px;
-  right: 33px;
-  width: 251px;
+  top: 6px;
+  right: 15px;
+  width: 0%;
   height: 240px;
-  object-fit: contain;
+  object-fit: cover;
+  object-position: right;
 
   @media (min-width: $tablet) {
-    width: 548px;
-    height: 546px;
-    right: 84px;
+    top: 25px;
+    right: 87px;
+    width: 38.7%;
+    height: 520px;
   }
 
   @media (min-width: $desktop) {
-    width: 542px;
-    height: 552px;
-    right: 41px;
+    width: 40.5%;
+    height: 521px;
+    right: 44px;
+    top: -2px;
   }
 }

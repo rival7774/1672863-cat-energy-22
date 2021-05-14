@@ -9,6 +9,8 @@
 .socials__list {
   display: flex;
   flex-wrap: wrap;
+  max-width: 280px;
+  justify-content: center;
 
   @media (min-width: $tablet) {
     margin-left: 24px;
