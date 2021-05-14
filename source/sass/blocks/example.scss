@@ -77,7 +77,16 @@
 }
 
 .example__inner-slider {
+  padding-left: calc(50% - 160px);
+  padding-right: calc(50% - 160px);
+
+  @media (min-width: $tablet) {
+    padding-left: calc(50% - 384px);
+    padding-right: calc(50% - 384px);
+  }
+
   @media (min-width: $desktop) {
+    padding: 0;
     align-self: flex-start;
     position: relative;
     right: -135px;

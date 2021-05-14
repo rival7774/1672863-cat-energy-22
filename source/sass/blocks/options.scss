@@ -24,6 +24,7 @@
 
 .options__wrapper {
   position: relative;
+  margin: 0;
 }
 
 .options__value {
@@ -77,6 +78,7 @@
   flex-wrap: wrap;
   justify-content: center;
   padding-top: 1px;
+  margin: 0;
 
   @media (min-width: $tablet) {
     grid-column: 3/-1;
