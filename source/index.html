@@ -8,7 +8,6 @@
 
   <link rel="preload" href="fonts/oswaldregular.woff2" as="font">
   <link rel="preload" href="fonts/oswaldmedium.woff2" as="font">
-  <link rel="stylesheet" href="normalize.min.css">
   <link rel="stylesheet" href="css/style.min.css">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="img/favicon/favicon.svg" type="image/svg+xml">
@@ -18,7 +17,8 @@
 </head>
 
 <body class="page-body">
-  <header class="page-header">
+  <!--main-menu--no-js-->
+  <header class="page-header main-menu--no-js">
     <div class="menu-wrap menu-wrap--position">
       <div class="page-header__logo-conteiner">
         <a class="link-logo">
@@ -30,11 +30,11 @@
             <img class="logo-img img" width="190" height="38" src="img/logo-mobile.svg" alt="Логотип Кэт Энерджи">
           </picture>
         </a>
-        <button class="button-menu button" aria-label="Кнопка меню"><span
-            class="button-menu__item button-menu__item--active"></span></button>
+        <!-- button-menu__item--active -->
+        <button class="button-menu button" aria-label="Кнопка меню"><span class="button-menu__item"></span></button>
       </div>
-      <!--main-menu--no-js-->
-      <nav class="main-menu main-menu--color-link main-menu--active">
+      <!--main-menu--active-->
+      <nav class="main-menu main-menu--color-link">
         <a class="main-menu__link main-menu__link--active">Главная</a>
 
         <a class="main-menu__link" href="catalog.html">Каталог продукции</a>
@@ -255,6 +255,7 @@
     </div>
   </footer>
 
+  <script src="js/script.min.js"></script>
 </body>
 
 </html>
