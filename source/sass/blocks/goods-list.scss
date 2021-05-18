@@ -43,6 +43,10 @@
   }
 }
 
+.goods-list__link-inner {
+  text-decoration: none;
+}
+
 .goods-list__title {
   @include font(16px, 16px);
   text-transform: uppercase;

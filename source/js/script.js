@@ -6,8 +6,8 @@ if (document.querySelector(".main-menu")) {
   const menuButton = document.querySelector(".button-menu");
   const menuButtonSpan = document.querySelector(".button-menu__item");
 
-  if (header.classList.contains("main-menu--no-js")) {
-    header.classList.remove("main-menu--no-js");
+  if (header.classList.contains("main-menu-no-js")) {
+    header.classList.remove("main-menu-no-js");
   }
 
   menuButton.addEventListener("click", () => {

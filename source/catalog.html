@@ -18,8 +18,8 @@
 </head>
 
 <body class="page-body">
-
-  <header class="page-header">
+  <!--main-menu-no-js-->
+  <header class="page-header main-menu-no-js">
     <div class="menu-wrap">
       <div class="page-header__logo-conteiner">
         <a class="link-logo" href="index.html">
@@ -31,11 +31,10 @@
             <img class="logo-img img" width="190" height="38" src="img/logo-mobile.svg" alt="Логотип Кэт Энерджи">
           </picture>
         </a>
-        <button class="button-menu button" aria-label="Кнопка меню"><span
-            class="button-menu__item button-menu__item--active"></span></button>
+        <button class="button-menu button" aria-label="Кнопка меню"><span class="button-menu__item"></span></button>
       </div>
-      <!--main-menu--no-js-->
-      <nav class="main-menu main-menu--active">
+
+      <nav class="main-menu">
         <a class="main-menu__link" href="index.html">Главная</a>
 
         <a class="main-menu__link main-menu__link--active">Каталог продукции</a>
@@ -53,21 +52,26 @@
     <section class="cards">
       <ul class="cards__list list conteiner">
         <li class="cards__item">
-          <picture>
-            <source type="image/webp" media="(min-width: 1280px)"
-              srcset="img/chicken-500-desktop.webp, img/chicken-500-desktop@x2.webp 2x">
-            <source type="image/webp" media="(min-width: 768px)"
-              srcset="img/chicken-500-tablet.webp, img/chicken-500-tablet@x2.webp 2x">
-            <source type="image/webp" srcset="img/chicken-500.webp, img/chicken-500@x2.webp 2x">
+          <a class="cards__link" href="#">
+            <picture>
+              <source type="image/webp" media="(min-width: 1280px)"
+                srcset="img/chicken-500-desktop.webp, img/chicken-500-desktop@x2.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)"
+                srcset="img/chicken-500-tablet.webp, img/chicken-500-tablet@x2.webp 2x">
+              <source type="image/webp" srcset="img/chicken-500.webp, img/chicken-500@x2.webp 2x">
 
-            <source media="(min-width: 1280px)" srcset="img/chicken-500-desktop.png, img/chicken-500-desktop@x2.png 2x">
-            <source media="(min-width: 768px)" srcset="img/chicken-500-tablet.png, img/chicken-500-tablet@x2.png 2x">
-            <img class="cards__img img" width="140" height="112" src="img/chicken-500.png"
-              srcset="img/chicken-500@x2.png 2x" alt="Изображение банки корма с курицей весом 500 грам">
-          </picture>
+              <source media="(min-width: 1280px)"
+                srcset="img/chicken-500-desktop.png, img/chicken-500-desktop@x2.png 2x">
+              <source media="(min-width: 768px)" srcset="img/chicken-500-tablet.png, img/chicken-500-tablet@x2.png 2x">
+              <img class="cards__img img" width="140" height="112" src="img/chicken-500.png"
+                srcset="img/chicken-500@x2.png 2x" alt="Изображение банки корма с курицей весом 500 грам">
+            </picture>
+          </a>
 
           <div class="cards__inner">
-            <h2 class="cards__title">Cat Energy PRO 500 г</h2>
+            <a class="cards__link" href="#">
+              <h2 class="cards__title">Cat Energy PRO 500 г</h2>
+            </a>
 
             <dl class="cards__characteristics">
               <dt class="value">Масса</dt>
@@ -89,22 +93,27 @@
         </li>
 
         <li class="cards__item">
-          <picture>
-            <source type="image/webp" media="(min-width: 1280px)"
-              srcset="img/chicken-1000-desktop.webp, img/chicken-1000-desktop@x2.webp 2x">
-            <source type="image/webp" media="(min-width: 768px)"
-              srcset="img/chicken-1000-tablet.webp, img/chicken-1000-tablet@x2.webp 2x">
-            <source type="image/webp" srcset="img/chicken-1000.webp, img/chicken-500@x2.webp 2x">
+          <a class="cards__link" href="#">
+            <picture>
+              <source type="image/webp" media="(min-width: 1280px)"
+                srcset="img/chicken-1000-desktop.webp, img/chicken-1000-desktop@x2.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)"
+                srcset="img/chicken-1000-tablet.webp, img/chicken-1000-tablet@x2.webp 2x">
+              <source type="image/webp" srcset="img/chicken-1000.webp, img/chicken-500@x2.webp 2x">
 
-            <source media="(min-width: 1280px)"
-              srcset="img/chicken-1000-desktop.png, img/chicken-1000-desktop@x2.png 2x">
-            <source media="(min-width: 768px)" srcset="img/chicken-1000-tablet.png, img/chicken-1000-tablet@x2.png 2x">
-            <img class="cards__img img" width="140" height="112" src="img/chicken-1000.png"
-              srcset="img/chicken-1000@x2.png 2x" alt="Изображение банки корма с курицей весом 1000 грам">
-          </picture>
+              <source media="(min-width: 1280px)"
+                srcset="img/chicken-1000-desktop.png, img/chicken-1000-desktop@x2.png 2x">
+              <source media="(min-width: 768px)"
+                srcset="img/chicken-1000-tablet.png, img/chicken-1000-tablet@x2.png 2x">
+              <img class="cards__img img" width="140" height="112" src="img/chicken-1000.png"
+                srcset="img/chicken-1000@x2.png 2x" alt="Изображение банки корма с курицей весом 1000 грам">
+            </picture>
+          </a>
 
           <div class="cards__inner">
-            <h2 class="cards__title">Cat Energy PRO 1000 г</h2>
+            <a class="cards__link" href="#">
+              <h2 class="cards__title">Cat Energy PRO 1000 г</h2>
+            </a>
 
             <dl class="cards__characteristics">
               <dt class="value">Масса</dt>
@@ -126,21 +135,25 @@
         </li>
 
         <li class="cards__item">
-          <picture>
-            <source type="image/webp" media="(min-width: 1280px)"
-              srcset="img/fish-500-desktop.webp, img/fish-500-desktop@x2.webp 2x">
-            <source type="image/webp" media="(min-width: 768px)"
-              srcset="img/fish-500-tablet.webp, img/fish-500-tablet@x2.webp 2x">
-            <source type="image/webp" srcset="img/fish-500.webp, img/fish-500@x2.webp 2x">
+          <a class="cards__link" href="#">
+            <picture>
+              <source type="image/webp" media="(min-width: 1280px)"
+                srcset="img/fish-500-desktop.webp, img/fish-500-desktop@x2.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)"
+                srcset="img/fish-500-tablet.webp, img/fish-500-tablet@x2.webp 2x">
+              <source type="image/webp" srcset="img/fish-500.webp, img/fish-500@x2.webp 2x">
 
-            <source media="(min-width: 1280px)" srcset="img/fish-500-desktop.png, img/fish-500-desktop@x2.png 2x">
-            <source media="(min-width: 768px)" srcset="img/fish-500-tablet.png, img/fish-500-tablet@x2.png 2x">
-            <img class="cards__img img" width="140" height="112" src="img/fish-500.png"
-              srcset="img/fish-500.png@x2.png 2x" alt="Изображение банки корма с рыбай весом 500 грам">
-          </picture>
+              <source media="(min-width: 1280px)" srcset="img/fish-500-desktop.png, img/fish-500-desktop@x2.png 2x">
+              <source media="(min-width: 768px)" srcset="img/fish-500-tablet.png, img/fish-500-tablet@x2.png 2x">
+              <img class="cards__img img" width="140" height="112" src="img/fish-500.png"
+                srcset="img/fish-500.png@x2.png 2x" alt="Изображение банки корма с рыбай весом 500 грам">
+            </picture>
+          </a>
 
           <div class="cards__inner">
-            <h2 class="cards__title">Cat Energy PRO 500 г</h2>
+            <a class="cards__link" href="#">
+              <h2 class="cards__title">Cat Energy PRO 500 г</h2>
+            </a>
 
             <dl class="cards__characteristics">
               <dt class="value">Масса</dt>
@@ -162,21 +175,25 @@
         </li>
 
         <li class="cards__item">
-          <picture>
-            <source type="image/webp" media="(min-width: 1280px)"
-              srcset="img/fish-1000-desktop.webp, img/fish-1000-desktop@x2.webp 2x">
-            <source type="image/webp" media="(min-width: 768px)"
-              srcset="img/fish-1000-tablet.webp, img/fish-1000-tablet@x2.webp 2x">
-            <source type="image/webp" srcset="img/fish-1000.webp, img/fish-1000@x2.webp 2x">
+          <a class="cards__link" href="#">
+            <picture>
+              <source type="image/webp" media="(min-width: 1280px)"
+                srcset="img/fish-1000-desktop.webp, img/fish-1000-desktop@x2.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)"
+                srcset="img/fish-1000-tablet.webp, img/fish-1000-tablet@x2.webp 2x">
+              <source type="image/webp" srcset="img/fish-1000.webp, img/fish-1000@x2.webp 2x">
 
-            <source media="(min-width: 1280px)" srcset="img/fish-1000-desktop.png, img/fish-1000-desktop@x2.png 2x">
-            <source media="(min-width: 768px)" srcset="img/fish-1000-tablet.png, img/fish-1000-tablet@x2.png 2x">
-            <img class="cards__img img" width="140" height="112" src="img/fish-1000.png"
-              srcset="img/fish-1000.png@x2.png 2x" alt="Изображение банки корма с рыбай весом 1000 грам">
-          </picture>
+              <source media="(min-width: 1280px)" srcset="img/fish-1000-desktop.png, img/fish-1000-desktop@x2.png 2x">
+              <source media="(min-width: 768px)" srcset="img/fish-1000-tablet.png, img/fish-1000-tablet@x2.png 2x">
+              <img class="cards__img img" width="140" height="112" src="img/fish-1000.png"
+                srcset="img/fish-1000.png@x2.png 2x" alt="Изображение банки корма с рыбай весом 1000 грам">
+            </picture>
+          </a>
 
           <div class="cards__inner">
-            <h2 class="cards__title">Cat Energy PRO 1000 г</h2>
+            <a class="cards__link" href="#">
+              <h2 class="cards__title">Cat Energy PRO 1000 г</h2>
+            </a>
 
             <dl class="cards__characteristics">
               <dt class="value">Масса</dt>
@@ -198,23 +215,27 @@
         </li>
 
         <li class="cards__item">
-          <picture>
-            <source type="image/webp" media="(min-width: 1280px)"
-              srcset="img/buckwheat-500-desktop.webp, img/buckwheat-500-desktop@x2.webp 2x">
-            <source type="image/webp" media="(min-width: 768px)"
-              srcset="img/buckwheat-500-tablet.webp, img/buckwheat-500-tablet@x2.webp 2x">
-            <source type="image/webp" srcset="img/buckwheat-500.webp, img/buckwheat-500@x2.webp 2x">
+          <a class="cards__link" href="#">
+            <picture>
+              <source type="image/webp" media="(min-width: 1280px)"
+                srcset="img/buckwheat-500-desktop.webp, img/buckwheat-500-desktop@x2.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)"
+                srcset="img/buckwheat-500-tablet.webp, img/buckwheat-500-tablet@x2.webp 2x">
+              <source type="image/webp" srcset="img/buckwheat-500.webp, img/buckwheat-500@x2.webp 2x">
 
-            <source media="(min-width: 1280px)"
-              srcset="img/buckwheat-500-desktop.png, img/buckwheat-500-desktop@x2.png 2x">
-            <source media="(min-width: 768px)"
-              srcset="img/buckwheat-500-tablet.png, img/buckwheat-500-tablet@x2.png 2x">
-            <img class="cards__img img" width="140" height="112" src="img/buckwheat-500.png"
-              srcset="img/buckwheat-500.png@x2.png 2x" alt="Изображение банки корма с гречкой весом 500 грам">
-          </picture>
+              <source media="(min-width: 1280px)"
+                srcset="img/buckwheat-500-desktop.png, img/buckwheat-500-desktop@x2.png 2x">
+              <source media="(min-width: 768px)"
+                srcset="img/buckwheat-500-tablet.png, img/buckwheat-500-tablet@x2.png 2x">
+              <img class="cards__img img" width="140" height="112" src="img/buckwheat-500.png"
+                srcset="img/buckwheat-500.png@x2.png 2x" alt="Изображение банки корма с гречкой весом 500 грам">
+            </picture>
+          </a>
 
           <div class="cards__inner">
-            <h2 class="cards__title">Cat Energy slim 500 г</h2>
+            <a class="cards__link" href="#">
+              <h2 class="cards__title">Cat Energy slim 500 г</h2>
+            </a>
 
             <dl class="cards__characteristics">
               <dt class="value">Масса</dt>
@@ -236,23 +257,27 @@
         </li>
 
         <li class="cards__item">
-          <picture>
-            <source type="image/webp" media="(min-width: 1280px)"
-              srcset="img/buckwheat-1000-desktop.webp, img/buckwheat-1000-desktop@x2.webp 2x">
-            <source type="image/webp" media="(min-width: 768px)"
-              srcset="img/buckwheat-1000-tablet.webp, img/buckwheat-1000-tablet@x2.webp 2x">
-            <source type="image/webp" srcset="img/buckwheat-1000.webp, img/buckwheat-1000@x2.webp 2x">
+          <a class="cards__link" href="#">
+            <picture>
+              <source type="image/webp" media="(min-width: 1280px)"
+                srcset="img/buckwheat-1000-desktop.webp, img/buckwheat-1000-desktop@x2.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)"
+                srcset="img/buckwheat-1000-tablet.webp, img/buckwheat-1000-tablet@x2.webp 2x">
+              <source type="image/webp" srcset="img/buckwheat-1000.webp, img/buckwheat-1000@x2.webp 2x">
 
-            <source media="(min-width: 1280px)"
-              srcset="img/buckwheat-1000-desktop.png, img/buckwheat-1000-desktop@x2.png 2x">
-            <source media="(min-width: 768px)"
-              srcset="img/buckwheat-1000-tablet.png, img/buckwheat-1000-tablet@x2.png 2x">
-            <img class="cards__img img" width="140" height="112" src="img/buckwheat-1000.png"
-              srcset="img/buckwheat-1000@x2.png 2x" alt="Изображение банки корма с гречкой весом 1000 грам">
-          </picture>
+              <source media="(min-width: 1280px)"
+                srcset="img/buckwheat-1000-desktop.png, img/buckwheat-1000-desktop@x2.png 2x">
+              <source media="(min-width: 768px)"
+                srcset="img/buckwheat-1000-tablet.png, img/buckwheat-1000-tablet@x2.png 2x">
+              <img class="cards__img img" width="140" height="112" src="img/buckwheat-1000.png"
+                srcset="img/buckwheat-1000@x2.png 2x" alt="Изображение банки корма с гречкой весом 1000 грам">
+            </picture>
+          </a>
 
           <div class="cards__inner">
-            <h2 class="cards__title">Cat Energy slim 1000 г</h2>
+            <a class="cards__link" href="#">
+              <h2 class="cards__title">Cat Energy slim 1000 г</h2>
+            </a>
 
             <dl class="cards__characteristics">
               <dt class="value">Масса</dt>
@@ -274,21 +299,25 @@
         </li>
 
         <li class="cards__item">
-          <picture>
-            <source type="image/webp" media="(min-width: 1280px)"
-              srcset="img/rice-1000-desktop.webp, img/rice-1000-desktop@x2.webp 2x">
-            <source type="image/webp" media="(min-width: 768px)"
-              srcset="img/rice-1000-tablet.webp, img/rice-1000-tablet@x2.webp 2x">
-            <source type="image/webp" srcset="img/rice-1000.webp, img/rice-1000@x2.webp 2x">
+          <a class="cards__link" href="#">
+            <picture>
+              <source type="image/webp" media="(min-width: 1280px)"
+                srcset="img/rice-1000-desktop.webp, img/rice-1000-desktop@x2.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)"
+                srcset="img/rice-1000-tablet.webp, img/rice-1000-tablet@x2.webp 2x">
+              <source type="image/webp" srcset="img/rice-1000.webp, img/rice-1000@x2.webp 2x">
 
-            <source media="(min-width: 1280px)" srcset="img/rice-1000-desktop.png, img/rice-1000-desktop@x2.png 2x">
-            <source media="(min-width: 768px)" srcset="img/rice-1000-tablet.png, img/rice-1000-tablet@x2.png 2x">
-            <img class="cards__img img" width="140" height="112" src="img/rice-1000.png"
-              srcset="img/rice-1000@x2.png 2x" alt="Изображение банки корма с рисом весом 1000 грам">
-          </picture>
+              <source media="(min-width: 1280px)" srcset="img/rice-1000-desktop.png, img/rice-1000-desktop@x2.png 2x">
+              <source media="(min-width: 768px)" srcset="img/rice-1000-tablet.png, img/rice-1000-tablet@x2.png 2x">
+              <img class="cards__img img" width="140" height="112" src="img/rice-1000.png"
+                srcset="img/rice-1000@x2.png 2x" alt="Изображение банки корма с рисом весом 1000 грам">
+            </picture>
+          </a>
 
           <div class="cards__inner">
-            <h2 class="cards__title">Cat Energy slim 500 г</h2>
+            <a class="cards__link" href="#">
+              <h2 class="cards__title">Cat Energy slim 500 г</h2>
+            </a>
 
             <dl class="cards__characteristics">
               <dt class="cards__weight value">Масса</dt>
@@ -327,7 +356,9 @@
 
         <ul class="goods-list list">
           <li class="goods-list__item">
-            <h3 class="goods-list__title">Сахарозаменитель</h3>
+            <a class="goods-list__link-inner" href="#">
+              <h3 class="goods-list__title">Сахарозаменитель</h3>
+            </a>
 
             <dl class="goods-list__inner">
               <dt class="goods-list__value">1 упаковка (100 г)</dt>
@@ -338,7 +369,9 @@
           </li>
 
           <li class="goods-list__item">
-            <h3 class="goods-list__title">Питьевая вода</h3>
+            <a class="goods-list__link-inner" href="#">
+              <h3 class="goods-list__title">Питьевая вода</h3>
+            </a>
 
             <dl class="goods-list__inner">
               <dt class="goods-list__value">5 литров</dt>
@@ -349,7 +382,9 @@
           </li>
 
           <li class="goods-list__item">
-            <h3 class="goods-list__title">Молоко</h3>
+            <a class="goods-list__link-inner" href="#">
+              <h3 class="goods-list__title">Молоко</h3>
+            </a>
 
             <dl class="goods-list__inner">
               <dt class="goods-list__value">1 литр</dt>
@@ -360,7 +395,9 @@
           </li>
 
           <li class="goods-list__item">
-            <h3 class="goods-list__title">Витамины</h3>
+            <a class="goods-list__link-inner" href="#">
+              <h3 class="goods-list__title">Витамины</h3>
+            </a>
 
             <dl class="goods-list__inner">
               <dt class="goods-list__value">1 упаковка (30 г)</dt>
